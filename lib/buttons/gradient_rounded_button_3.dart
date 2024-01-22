@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GradientButtonFb4 extends StatelessWidget {
-  const GradientButtonFb4({super.key});
+class GradientRoundedButton3 extends StatelessWidget {
+  const GradientRoundedButton3({super.key});
 
   @override
   Widget build(BuildContext context) {
