@@ -18,21 +18,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'FYP',
       theme: ThemeData(),
       home: const Scaffold(
         backgroundColor: Colors.black,
-        body: Column(
-          children: [
-            GradientButton1(),
-            OutlineButton2(),
-            GradientRoundedButton3(),
-            OutlineRoundedButton4(),
-            IconButton5(),
-            LoadingAnimatedButton6(),
-            ToggleAnimatedIconButton7(),
-            NeumorphismButton8(),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              GradientButton1(),
+              OutlineButton2(),
+              GradientRoundedButton3(),
+              OutlineRoundedButton4(),
+              IconButton5(),
+              LoadingAnimatedButton6(),
+              ToggleAnimatedIconButton7(),
+              NeumorphismButton8(),
+            ],
+          ),
         ),
       ),
     );

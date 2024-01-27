@@ -47,6 +47,9 @@ class _LoadingAnimatedButton6State extends State<LoadingAnimatedButton6>
           width: 200,
           height: 50,
           alignment: Alignment.center,
+          child: const Center(
+            child: Text("Hello World"),
+          ),
         ),
       ),
     );
