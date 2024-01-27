@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/buttons/floating_action_button_9.dart';
 import 'package:fyp/buttons/gradient_button_1.dart';
 import 'package:fyp/buttons/gradient_rounded_button_3.dart';
 import 'package:fyp/buttons/icon_button_5.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
               LoadingAnimatedButton6(),
               ToggleAnimatedIconButton7(),
               NeumorphismButton8(),
+              FloatingActionButton9(),
             ],
           ),
         ),
