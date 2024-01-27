@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:vector_math/vector_math_64.dart' as vector;
 
-class LoadingAnimatedButton extends StatefulWidget {
-  const LoadingAnimatedButton({super.key});
+class LoadingAnimatedButton6 extends StatefulWidget {
+  const LoadingAnimatedButton6({super.key});
 
   @override
-  State<LoadingAnimatedButton> createState() => _LoadingAnimatedButtonState();
+  State<LoadingAnimatedButton6> createState() => _LoadingAnimatedButton6State();
 }
 
-class _LoadingAnimatedButtonState extends State<LoadingAnimatedButton>
+class _LoadingAnimatedButton6State extends State<LoadingAnimatedButton6>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
 

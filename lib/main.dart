@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/buttons/gradient_button_1.dart';
+import 'package:fyp/buttons/gradient_rounded_button_3.dart';
+import 'package:fyp/buttons/icon_button_5.dart';
+import 'package:fyp/buttons/loading_animation_button_6.dart';
+import 'package:fyp/buttons/neumorphism_button_8.dart';
+import 'package:fyp/buttons/outline_button_2.dart';
+import 'package:fyp/buttons/outline_rounded_button_4.dart';
+import 'package:fyp/buttons/toggle_animation_button_7.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +19,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FYP',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      theme: ThemeData(),
+      home: const Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          children: [
+            GradientButton1(),
+            OutlineButton2(),
+            GradientRoundedButton3(),
+            OutlineRoundedButton4(),
+            IconButton5(),
+            LoadingAnimatedButton6(),
+            ToggleAnimatedIconButton7(),
+            NeumorphismButton8(),
+          ],
+        ),
       ),
     );
   }
