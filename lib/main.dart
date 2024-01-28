@@ -10,6 +10,7 @@ import 'package:fyp/buttons/neumorphism_button_8.dart';
 import 'package:fyp/buttons/neumorphic_button_11.dart';
 import 'package:fyp/buttons/outline_button_2.dart';
 import 'package:fyp/buttons/outline_rounded_button_4.dart';
+import 'package:fyp/buttons/text_button_13.dart';
 import 'package:fyp/buttons/toggle_animation_button_7.dart';
 
 void main() {
@@ -25,36 +26,37 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'FYP',
       theme: ThemeData(),
-      home: const Scaffold(
+      home: Scaffold(
         // backgroundColor: Colors.black,
         body: Center(
           child: SingleChildScrollView(
             child: Column(
               children: [
-                GradientButton1(),
-                SizedBox(height: 10),
-                OutlineButton2(),
-                SizedBox(height: 10),
-                GradientRoundedButton3(),
-                SizedBox(height: 10),
-                OutlineRoundedButton4(),
-                SizedBox(height: 10),
-                IconButton5(),
-                SizedBox(height: 10),
-                LoadingAnimatedButton6(),
-                SizedBox(height: 10),
-                ToggleAnimatedIconButton7(),
-                SizedBox(height: 10),
-                NeumorphismButton8(),
-                SizedBox(height: 10),
-                FloatingActionButton9(),
-                SizedBox(height: 10),
-                AlertButton10(),
-                SizedBox(height: 10),
-                NeumorphicButton11(),
-                SizedBox(height: 10),
-                NeumorphicButton12(),
-                SizedBox(height: 10),
+                const GradientButton1(),
+                const SizedBox(height: 10),
+                const OutlineButton2(),
+                const SizedBox(height: 10),
+                const GradientRoundedButton3(),
+                const SizedBox(height: 10),
+                const OutlineRoundedButton4(),
+                const SizedBox(height: 10),
+                const IconButton5(),
+                const SizedBox(height: 10),
+                const LoadingAnimatedButton6(),
+                const SizedBox(height: 10),
+                const ToggleAnimatedIconButton7(),
+                const SizedBox(height: 10),
+                const NeumorphismButton8(),
+                const SizedBox(height: 10),
+                const FloatingActionButton9(),
+                const SizedBox(height: 10),
+                const AlertButton10(),
+                const SizedBox(height: 10),
+                const NeumorphicButton11(),
+                const SizedBox(height: 10),
+                const NeumorphicButton12(),
+                const SizedBox(height: 10),
+                TextButton13(btnText: "Hello World", onPress: () {}),
               ],
             ),
           ),
