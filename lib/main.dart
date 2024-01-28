@@ -6,6 +6,7 @@ import 'package:fyp/buttons/gradient_rounded_button_3.dart';
 import 'package:fyp/buttons/icon_button_5.dart';
 import 'package:fyp/buttons/loading_animation_button_6.dart';
 import 'package:fyp/buttons/neumorphism_button_8.dart';
+import 'package:fyp/buttons/newmorphic_button_11.dart';
 import 'package:fyp/buttons/outline_button_2.dart';
 import 'package:fyp/buttons/outline_rounded_button_4.dart';
 import 'package:fyp/buttons/toggle_animation_button_7.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       title: 'FYP',
       theme: ThemeData(),
       home: const Scaffold(
-        backgroundColor: Colors.black,
+        // backgroundColor: Colors.black,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
               NeumorphismButton8(),
               FloatingActionButton9(),
               AlertButton10(),
+              NeumorphicButton11(),
             ],
           ),
         ),
