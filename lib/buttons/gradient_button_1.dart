@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class GradientButton1 extends StatelessWidget {
-  const GradientButton1({Key? key}) : super(key: key);
+  final String btnText;
+  final VoidCallback onPress;
+  const GradientButton1(
+      {Key? key, required this.btnText, required this.onPress})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +20,7 @@ class GradientButton1 extends StatelessWidget {
         ),
       ),
       child: ElevatedButton(
+        onPressed: onPress,
         style: ButtonStyle(
           elevation: MaterialStateProperty.all(0),
           alignment: Alignment.center,
@@ -36,12 +41,9 @@ class GradientButton1 extends StatelessWidget {
             ),
           ),
         ),
-        onPressed: () {
-          // on press function
-        },
-        child: const Text(
-          "Hello",
-          style: TextStyle(
+        child: Text(
+          btnText,
+          style: const TextStyle(
             color: Color(0xffffffff),
             fontSize: 16,
           ),

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class OutlineButton2 extends StatelessWidget {
-  const OutlineButton2({super.key});
+  final String btnText;
+  final VoidCallback onPress;
+  const OutlineButton2(
+      {super.key, required this.btnText, required this.onPress});
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
+      onPressed: onPress,
       style: ButtonStyle(
         elevation: MaterialStateProperty.all(0),
         alignment: Alignment.center,
@@ -22,10 +26,9 @@ class OutlineButton2 extends StatelessWidget {
           ),
         ),
       ),
-      onPressed: () {},
-      child: const Text(
-        "Hello",
-        style: TextStyle(
+      child: Text(
+        btnText,
+        style: const TextStyle(
           color: Color(0xff4338CA),
           fontSize: 16,
         ),

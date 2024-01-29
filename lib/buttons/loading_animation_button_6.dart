@@ -1,9 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:vector_math/vector_math_64.dart' as vector;
 
 class LoadingAnimatedButton6 extends StatefulWidget {
-  const LoadingAnimatedButton6({super.key});
+  final String btnText;
+  final VoidCallback onPress;
+  final double height;
+  final double width;
+  const LoadingAnimatedButton6(
+      {super.key,
+      required this.btnText,
+      required this.onPress,
+      required this.height,
+      required this.width});
 
   @override
   State<LoadingAnimatedButton6> createState() => _LoadingAnimatedButton6State();
@@ -32,7 +42,7 @@ class _LoadingAnimatedButton6State extends State<LoadingAnimatedButton6>
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: widget.onPress,
       borderRadius: BorderRadius.circular(15),
       splashColor: Colors.indigo,
       child: CustomPaint(
@@ -44,11 +54,11 @@ class _LoadingAnimatedButton6State extends State<LoadingAnimatedButton6>
           color: Colors.indigo,
         ),
         child: Container(
-          width: 200,
-          height: 50,
+          width: widget.width,
+          height: widget.height,
           alignment: Alignment.center,
-          child: const Center(
-            child: Text("Hello World"),
+          child: Center(
+            child: Text(widget.btnText),
           ),
         ),
       ),

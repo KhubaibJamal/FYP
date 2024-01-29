@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 
 class AlertButton10 extends StatelessWidget {
-  const AlertButton10({Key? key}) : super(key: key);
+  final String btnText;
+  final VoidCallback onPress;
+  final double height;
+  final double width;
+
+  const AlertButton10(
+      {Key? key,
+      required this.btnText,
+      required this.onPress,
+      required this.height,
+      required this.width})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,8 +20,8 @@ class AlertButton10 extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Ink(
-          width: 48.0,
-          height: 48.0,
+          width: width,
+          height: height,
           decoration: const ShapeDecoration(
             color: Colors.green,
             shape: CircleBorder(side: BorderSide(color: Colors.transparent)),
@@ -21,7 +32,7 @@ class AlertButton10 extends StatelessWidget {
             iconSize: 48.0 / 2,
             icon: const Icon(Icons.message, color: Colors.white),
             splashColor: Colors.blue.withOpacity(.4),
-            onPressed: () {},
+            onPressed: onPress,
           ),
         ),
         Positioned(
@@ -36,7 +47,7 @@ class AlertButton10 extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                5.toString(),
+                btnText,
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 48.0 / 4,

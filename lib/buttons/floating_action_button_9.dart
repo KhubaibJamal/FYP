@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 class FloatingActionButton9 extends StatelessWidget {
-  const FloatingActionButton9({super.key});
+  final String btnText;
+  final VoidCallback onPress;
+  const FloatingActionButton9(
+      {super.key, required this.btnText, required this.onPress});
 
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.extended(
       icon: const Icon(Icons.add),
-      label: const Text("Hello World"),
-      onPressed: () {},
+      label: Text(btnText),
+      onPressed: onPress,
     );
   }
 }

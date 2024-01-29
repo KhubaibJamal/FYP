@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 
 class OutlineRoundedButton4 extends StatelessWidget {
-  const OutlineRoundedButton4({super.key});
+  final String btnText;
+  final VoidCallback onPress;
+  final IconData btnIcon;
+  final double height;
+  final double width;
+  const OutlineRoundedButton4(
+      {super.key,
+      required this.btnText,
+      required this.onPress,
+      required this.btnIcon,
+      required this.height,
+      required this.width});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 250,
+      width: width,
+      height: height,
       child: OutlinedButton(
-        onPressed: () {},
+        onPressed: onPress,
         style: ButtonStyle(
           side: MaterialStateProperty.all(
             const BorderSide(color: Color(0xff2749FD), width: 1.4),
@@ -24,18 +36,18 @@ class OutlineRoundedButton4 extends StatelessWidget {
             ),
           ),
         ),
-        child: const Row(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Sign Out",
-              style: TextStyle(
+              btnText,
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w300,
                 color: Color(0xff2749FD),
               ),
             ),
-            Icon(Icons.arrow_forward, color: Color(0xff2749FD))
+            Icon(btnIcon, color: const Color(0xff2749FD))
           ],
         ),
       ),

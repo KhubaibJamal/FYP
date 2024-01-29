@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
 
 class NeumorphismButton8 extends StatelessWidget {
-  const NeumorphismButton8({super.key});
+  final String btnText;
+  final VoidCallback onPress;
+  final double height;
+  final double width;
+  const NeumorphismButton8(
+      {super.key,
+      required this.btnText,
+      required this.onPress,
+      required this.height,
+      required this.width});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: onPress,
       child: Center(
         child: Container(
-          height: 50,
-          width: 200,
+          height: height,
+          width: width,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
@@ -30,10 +39,10 @@ class NeumorphismButton8 extends StatelessWidget {
               ],
             ),
           ),
-          child: const Center(
+          child: Center(
             child: Text(
-              "Hello world",
-              style: TextStyle(color: Colors.white),
+              btnText,
+              style: const TextStyle(color: Colors.white),
             ),
           ),
         ),
