@@ -12,6 +12,7 @@ import 'package:fyp/buttons/outline_button_2.dart';
 import 'package:fyp/buttons/outline_rounded_button_4.dart';
 import 'package:fyp/buttons/text_button_13.dart';
 import 'package:fyp/buttons/toggle_animation_button_7.dart';
+import 'package:fyp/buttons/toggle_icon_button_14.dart';
 
 void main() {
   runApp(const MyApp());
@@ -84,6 +85,15 @@ class MyApp extends StatelessWidget {
                 const NeumorphicButton12(),
                 const SizedBox(height: 10),
                 TextButton13(btnText: "Hello World", onPress: () {}),
+                const SizedBox(height: 10),
+                ToggleIconButton14(
+                  icons: const [
+                    Icon(Icons.favorite),
+                    Icon(Icons.local_fire_department_sharp),
+                    Icon(Icons.notifications),
+                  ],
+                  selected: (int value) {},
+                ),
               ],
             ),
           ),
