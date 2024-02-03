@@ -8,14 +8,22 @@ class SearchBars extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SearchBar1(
-          textController: controllerOne,
-          hintText: "Search Here",
+    return Scaffold(
+      appBar: AppBar(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              SearchBar1(
+                textController: controllerOne,
+                hintText: "Search Here",
+              ),
+              const SizedBox(height: 10),
+            ],
+          ),
         ),
-        const SizedBox(height: 10),
-      ],
+      ),
     );
   }
 }
