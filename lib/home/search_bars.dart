@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/search%20bar/gradient_search_box4.dart';
 import 'package:fyp/search%20bar/middle_text_search_bar2.dart';
 import 'package:fyp/search%20bar/rounded_search_box3.dart';
 import 'package:fyp/search%20bar/search_bar1.dart';
@@ -9,6 +10,7 @@ class SearchBars extends StatelessWidget {
   final TextEditingController controllerOne = TextEditingController();
   final TextEditingController controllerTwo = TextEditingController();
   final TextEditingController controllerThree = TextEditingController();
+  final TextEditingController controllerFour = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +36,10 @@ class SearchBars extends StatelessWidget {
                 hintText: 'Search Here',
               ),
               const SizedBox(height: 10),
+              GradientSearchBar4(
+                searchController: controllerFour,
+                hintText: 'Search Here',
+              )
             ],
           ),
         ),
