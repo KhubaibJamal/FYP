@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/search%20bar/middle_text_search_bar2.dart';
+import 'package:fyp/search%20bar/rounded_search_box3.dart';
 import 'package:fyp/search%20bar/search_bar1.dart';
 
 class SearchBars extends StatelessWidget {
@@ -7,6 +8,7 @@ class SearchBars extends StatelessWidget {
 
   final TextEditingController controllerOne = TextEditingController();
   final TextEditingController controllerTwo = TextEditingController();
+  final TextEditingController controllerThree = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,11 @@ class SearchBars extends StatelessWidget {
               MiddleTextSearchBar2(
                 searchController: controllerTwo,
                 hintText: "Search Here",
+              ),
+              const SizedBox(height: 10),
+              RoundedSearchBar3(
+                textController: controllerThree,
+                hintText: 'Search Here',
               ),
               const SizedBox(height: 10),
             ],
