@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/search%20bar/gradient_search_box4.dart';
 import 'package:fyp/search%20bar/middle_text_search_bar2.dart';
+import 'package:fyp/search%20bar/neumorphism_search_bar5.dart';
 import 'package:fyp/search%20bar/rounded_search_box3.dart';
 import 'package:fyp/search%20bar/search_bar1.dart';
 
@@ -39,7 +40,12 @@ class SearchBars extends StatelessWidget {
               GradientSearchBar4(
                 searchController: controllerFour,
                 hintText: 'Search Here',
-              )
+              ),
+              const SizedBox(height: 20),
+              NeumorphismSearchBar5(
+                controller: controllerFour,
+                hintText: "search here",
+              ),
             ],
           ),
         ),
