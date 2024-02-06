@@ -6,6 +6,7 @@ import 'package:fyp/search%20bar/neumorphism_search_bar5.dart';
 import 'package:fyp/search%20bar/rounded_search_box3.dart';
 import 'package:fyp/search%20bar/search_bar1.dart';
 import 'package:fyp/search%20bar/search_box6.dart';
+import 'package:fyp/search%20bar/search_box8.dart';
 
 class SearchBars extends StatelessWidget {
   SearchBars({super.key});
@@ -57,6 +58,11 @@ class SearchBars extends StatelessWidget {
               NeumorphismSearchBar7(
                 controller: controllerFour,
                 hintText: "search..",
+              ),
+              const SizedBox(height: 20),
+              SearchBox8(
+                textController: controllerOne,
+                hintText: "Search...",
               ),
             ],
           ),
