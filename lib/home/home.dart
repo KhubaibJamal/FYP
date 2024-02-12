@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/home/buttons.dart';
+import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/search_bars.dart';
 
 class Home extends StatelessWidget {
@@ -49,6 +50,24 @@ class Home extends StatelessWidget {
                   const SizedBox(width: 10),
                 ],
               ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'InputTextFields',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InputTextFields(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                ],
+              )
             ],
           ),
         ),
