@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/text%20fields/input_text_field1.dart';
+import 'package:fyp/text%20fields/input_text_field2.dart';
 
 class InputTextFields extends StatelessWidget {
   InputTextFields({super.key});
@@ -16,6 +17,13 @@ class InputTextFields extends StatelessWidget {
           child: Column(
             children: [
               InputTextField1(inputController: controller),
+              const SizedBox(height: 10),
+              CustomTextField(
+                readOnly: false,
+                controller: controller,
+                hintText: "Email",
+                enabled: true,
+              ),
               const SizedBox(height: 10),
             ],
           ),
