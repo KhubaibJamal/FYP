@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/text%20fields/input_text_field1.dart';
 import 'package:fyp/text%20fields/input_text_field2.dart';
 import 'package:fyp/text%20fields/input_text_field3.dart';
+import 'package:fyp/text%20fields/input_text_field4.dart';
 
 class InputTextFields extends StatelessWidget {
   InputTextFields({super.key});
@@ -27,6 +28,11 @@ class InputTextFields extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               PrefixIconInputTextField1(inputController: controller),
+              const SizedBox(height: 10),
+              PasswordTextField4(
+                textEditingController: controller,
+                hintText: "Enter your password here",
+              ),
               const SizedBox(height: 10),
             ],
           ),
