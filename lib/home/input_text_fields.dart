@@ -20,14 +20,14 @@ class InputTextFields extends StatelessWidget {
             children: [
               InputTextField1(inputController: controller),
               const SizedBox(height: 10),
-              CustomTextField(
+              CustomTextField2(
                 readOnly: false,
                 controller: controller,
                 hintText: "Email",
                 enabled: true,
               ),
               const SizedBox(height: 10),
-              PrefixIconInputTextField1(inputController: controller),
+              PrefixIconInputTextField3(inputController: controller),
               const SizedBox(height: 10),
               PasswordTextField4(
                 textEditingController: controller,

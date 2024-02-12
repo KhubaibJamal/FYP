@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class PrefixIconInputTextField1 extends StatelessWidget {
+class PrefixIconInputTextField3 extends StatelessWidget {
   final TextEditingController inputController;
-  const PrefixIconInputTextField1({Key? key, required this.inputController})
+  const PrefixIconInputTextField3({Key? key, required this.inputController})
       : super(key: key);
 
   @override

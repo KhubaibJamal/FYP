@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class CustomTextField extends StatefulWidget {
-  const CustomTextField(
+class CustomTextField2 extends StatefulWidget {
+  const CustomTextField2(
       {Key? key,
       this.minLines,
       this.maxLength,
@@ -41,10 +41,10 @@ class CustomTextField extends StatefulWidget {
   final List<TextInputFormatter>? inputFormatters;
 
   @override
-  State<CustomTextField> createState() => _CustomTextFieldState();
+  State<CustomTextField2> createState() => _CustomTextField2State();
 }
 
-class _CustomTextFieldState extends State<CustomTextField> {
+class _CustomTextField2State extends State<CustomTextField2> {
   bool isPasswordVisible = false;
 
   @override
