@@ -4,6 +4,7 @@ import 'package:fyp/text%20fields/input_text_field2.dart';
 import 'package:fyp/text%20fields/input_text_field3.dart';
 import 'package:fyp/text%20fields/input_text_field4.dart';
 import 'package:fyp/text%20fields/input_text_field5.dart';
+import 'package:fyp/text%20fields/input_text_field7.dart';
 import 'package:fyp/text%20fields/intput_tex_field6.dart';
 
 class InputTextFields extends StatelessWidget {
@@ -45,6 +46,11 @@ class InputTextFields extends StatelessWidget {
               PrefixIconInputTextField6(
                 inputController: controller,
                 hintText: "Username",
+              ),
+              const SizedBox(height: 10),
+              GradientInputField7(
+                textController: controller,
+                hintText: "UserName",
               ),
             ],
           ),
