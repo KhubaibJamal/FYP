@@ -5,7 +5,7 @@ import 'package:fyp/text%20fields/input_text_field3.dart';
 import 'package:fyp/text%20fields/input_text_field4.dart';
 import 'package:fyp/text%20fields/input_text_field5.dart';
 import 'package:fyp/text%20fields/input_text_field7.dart';
-import 'package:fyp/text%20fields/intput_text_field6.dart';
+import 'package:fyp/text%20fields/input_text_field6.dart';
 
 class InputTextFields extends StatelessWidget {
   InputTextFields({super.key});
