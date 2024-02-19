@@ -39,6 +39,7 @@ class InputTextFields extends StatelessWidget {
               UnderLineInputTextField5(
                 inputController: controller,
                 hintText: "Enter your Name here",
+                labelText: "Name",
               ),
               const SizedBox(height: 10),
               PrefixIconInputTextField6(

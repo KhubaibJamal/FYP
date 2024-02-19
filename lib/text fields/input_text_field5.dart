@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class UnderLineInputTextField5 extends StatelessWidget {
   final TextEditingController inputController;
   final String hintText;
+  final String labelText;
   final Color primaryColor;
 
   const UnderLineInputTextField5({
     Key? key,
     required this.inputController,
+    required this.labelText,
     required this.hintText,
     this.primaryColor = Colors.purple,
   }) : super(key: key);
@@ -34,6 +36,7 @@ class UnderLineInputTextField5 extends StatelessWidget {
         decoration: InputDecoration(
           filled: true,
           hintText: hintText,
+          labelText: labelText,
           hintStyle: TextStyle(color: Colors.grey.withOpacity(.75)),
           fillColor: Colors.transparent,
           contentPadding:
