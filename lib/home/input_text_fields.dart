@@ -3,6 +3,7 @@ import 'package:fyp/text%20fields/input_text_field1.dart';
 import 'package:fyp/text%20fields/input_text_field10.dart';
 import 'package:fyp/text%20fields/input_text_field11.dart';
 import 'package:fyp/text%20fields/input_text_field12.dart';
+import 'package:fyp/text%20fields/input_text_field13.dart';
 import 'package:fyp/text%20fields/input_text_field2.dart';
 import 'package:fyp/text%20fields/input_text_field3.dart';
 import 'package:fyp/text%20fields/input_text_field4.dart';
@@ -82,6 +83,11 @@ class InputTextFields extends StatelessWidget {
               InputTextField12(
                 controller: controller,
                 hintText: "khubaib@ssuet.edu.pk",
+              ),
+              const SizedBox(height: 10),
+              InputTextField13(
+                controller: controller,
+                hintText: "Enter you name here.",
               ),
             ],
           ),
