@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/buttons/alert_button_10.dart';
-import 'package:fyp/buttons/floating_action_button_9.dart';
-import 'package:fyp/buttons/gradient_button_1.dart';
-import 'package:fyp/buttons/gradient_rounded_button_3.dart';
-import 'package:fyp/buttons/icon_button_5.dart';
-import 'package:fyp/buttons/loading_animation_button_6.dart';
-import 'package:fyp/buttons/neumorphic_button_12.dart';
-import 'package:fyp/buttons/neumorphism_button_8.dart';
-import 'package:fyp/buttons/neumorphic_button_11.dart';
-import 'package:fyp/buttons/outline_button_2.dart';
-import 'package:fyp/buttons/outline_rounded_button_4.dart';
-import 'package:fyp/buttons/text_button_13.dart';
-import 'package:fyp/buttons/toggle_animation_button_7.dart';
-import 'package:fyp/buttons/toggle_icon_button_14.dart';
+import 'package:fyp/buttons/button10.dart';
+import 'package:fyp/buttons/button9.dart';
+import 'package:fyp/buttons/button1.dart';
+import 'package:fyp/buttons/button3.dart';
+import 'package:fyp/buttons/button5.dart';
+import 'package:fyp/buttons/button6.dart';
+import 'package:fyp/buttons/button12.dart';
+import 'package:fyp/buttons/button8.dart';
+import 'package:fyp/buttons/button11.dart';
+import 'package:fyp/buttons/button2.dart';
+import 'package:fyp/buttons/button4.dart';
+import 'package:fyp/buttons/button13.dart';
+import 'package:fyp/buttons/button7.dart';
+import 'package:fyp/buttons/button14.dart';
 
 class Buttons extends StatelessWidget {
   const Buttons({super.key});

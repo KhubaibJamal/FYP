@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/search%20bar/gradient_search_box4.dart';
-import 'package:fyp/search%20bar/middle_text_search_bar2.dart';
-import 'package:fyp/search%20bar/neomorphism_search_Bar7.dart';
-import 'package:fyp/search%20bar/neumorphism_search_bar5.dart';
-import 'package:fyp/search%20bar/rounded_search_box3.dart';
+import 'package:fyp/search%20bar/search_bar4.dart';
+import 'package:fyp/search%20bar/search_bar2.dart';
+import 'package:fyp/search%20bar/search_bar7.dart';
+import 'package:fyp/search%20bar/search_bar5.dart';
+import 'package:fyp/search%20bar/search_bar3.dart';
 import 'package:fyp/search%20bar/search_bar1.dart';
 import 'package:fyp/search%20bar/search_box10.dart';
 import 'package:fyp/search%20bar/search_box6.dart';
