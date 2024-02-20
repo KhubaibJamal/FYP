@@ -7,6 +7,7 @@ import 'package:fyp/text%20fields/input_text_field5.dart';
 import 'package:fyp/text%20fields/input_text_field7.dart';
 import 'package:fyp/text%20fields/input_text_field6.dart';
 import 'package:fyp/text%20fields/input_text_field8.dart';
+import 'package:fyp/text%20fields/input_text_field9.dart';
 
 class InputTextFields extends StatelessWidget {
   InputTextFields({super.key});
@@ -57,6 +58,11 @@ class InputTextFields extends StatelessWidget {
               InputTextField8(
                 textController: controller,
                 hintText: "Password",
+              ),
+              const SizedBox(height: 10),
+              InputTextField9(
+                controller: controller,
+                hintText: "username",
               ),
             ],
           ),
