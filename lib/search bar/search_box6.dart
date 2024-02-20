@@ -16,7 +16,7 @@ class SearchBox6 extends StatelessWidget {
       onChanged: (value) {
         //Do something wi
       },
-      style: const TextStyle(fontSize: 14, color: Colors.black),
+      style: const TextStyle(fontSize: 14, color: Colors.white),
       decoration: InputDecoration(
         suffixIcon: Container(
           margin: const EdgeInsets.all(7),

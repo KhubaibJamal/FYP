@@ -13,10 +13,7 @@ import 'package:fyp/search%20bar/search_box9.dart';
 class SearchBars extends StatelessWidget {
   SearchBars({super.key});
 
-  final TextEditingController controllerOne = TextEditingController();
-  final TextEditingController controllerTwo = TextEditingController();
-  final TextEditingController controllerThree = TextEditingController();
-  final TextEditingController controllerFour = TextEditingController();
+  final TextEditingController controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -28,52 +25,52 @@ class SearchBars extends StatelessWidget {
           child: Column(
             children: [
               SearchBar1(
-                textController: controllerOne,
+                textController: controller,
                 hintText: "Search Here",
               ),
               const SizedBox(height: 10),
               MiddleTextSearchBar2(
-                searchController: controllerTwo,
+                searchController: controller,
                 hintText: "Search Here",
               ),
               const SizedBox(height: 10),
               RoundedSearchBar3(
-                textController: controllerThree,
+                textController: controller,
                 hintText: 'Search Here',
               ),
               const SizedBox(height: 10),
               GradientSearchBar4(
-                searchController: controllerFour,
+                searchController: controller,
                 hintText: 'Search Here',
               ),
               const SizedBox(height: 20),
               NeumorphismSearchBar5(
-                controller: controllerFour,
+                controller: controller,
                 hintText: "search here",
               ),
               const SizedBox(height: 20),
               SearchBox6(
-                controller: controllerOne,
+                controller: controller,
                 hintText: "Search...",
               ),
               const SizedBox(height: 20),
               NeumorphismSearchBar7(
-                controller: controllerFour,
+                controller: controller,
                 hintText: "search..",
               ),
               const SizedBox(height: 20),
               SearchBox8(
-                textController: controllerOne,
+                textController: controller,
                 hintText: "Search...",
               ),
               const SizedBox(height: 20),
               SearchBox9(
-                searchController: controllerOne,
+                searchController: controller,
                 hintText: "Search...",
               ),
               const SizedBox(height: 20),
               SearchBox10(
-                searchController: controllerOne,
+                searchController: controller,
                 hintText: "Search...",
               ),
             ],

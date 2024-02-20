@@ -41,15 +41,15 @@ class InputTextField11 extends StatelessWidget {
         contentPadding: const EdgeInsets.symmetric(horizontal: 20.0),
         border: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.transparent),
-          borderRadius: BorderRadius.all(Radius.circular(15.0)),
+          borderRadius: BorderRadius.all(Radius.circular(12.0)),
         ),
         enabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.transparent),
-          borderRadius: BorderRadius.all(Radius.circular(15.0)),
+          borderRadius: BorderRadius.all(Radius.circular(12.0)),
         ),
         focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.transparent),
-          borderRadius: BorderRadius.all(Radius.circular(15.0)),
+          borderRadius: BorderRadius.all(Radius.circular(12.0)),
         ),
       ),
     );

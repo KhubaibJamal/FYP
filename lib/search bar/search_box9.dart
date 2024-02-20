@@ -21,9 +21,8 @@ class SearchBox9 extends StatelessWidget {
           Container(
             height: 50,
             width: 50,
-            decoration: BoxDecoration(
-              color: const Color(0xFF4e5f79),
-              // borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            decoration: const BoxDecoration(
+              color: Color(0xFF4e5f79),
             ),
             child: const Icon(
               Icons.search,
@@ -36,7 +35,7 @@ class SearchBox9 extends StatelessWidget {
               onChanged: (value) {},
               style: const TextStyle(
                 fontSize: 14,
-                color: Color(0xffffffff),
+                color: Colors.black,
               ),
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.mic, color: Colors.grey[500]!),
