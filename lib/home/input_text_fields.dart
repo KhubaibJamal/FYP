@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/text%20fields/input_text_field1.dart';
+import 'package:fyp/text%20fields/input_text_field10.dart';
 import 'package:fyp/text%20fields/input_text_field2.dart';
 import 'package:fyp/text%20fields/input_text_field3.dart';
 import 'package:fyp/text%20fields/input_text_field4.dart';
@@ -63,6 +64,12 @@ class InputTextFields extends StatelessWidget {
               InputTextField9(
                 controller: controller,
                 hintText: "username",
+              ),
+              const SizedBox(height: 10),
+              InputTextField10(
+                inputController: controller,
+                hintText: "Khubaib",
+                labelText: "Username",
               ),
             ],
           ),
