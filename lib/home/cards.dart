@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/card/card1.dart';
+import 'package:fyp/card/card2.dart';
 
 class Cards extends StatelessWidget {
   const Cards({super.key});
@@ -21,6 +22,7 @@ class Cards extends StatelessWidget {
                 onPressed: () {},
               ),
               const SizedBox(height: 10),
+              const Card2(),
             ],
           ),
         ),
