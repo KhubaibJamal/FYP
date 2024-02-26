@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/card/card1.dart';
 import 'package:fyp/card/card2.dart';
+import 'package:fyp/card/card3.dart';
 
 class Cards extends StatelessWidget {
   const Cards({super.key});
@@ -23,6 +24,14 @@ class Cards extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Card2(),
+              const SizedBox(height: 10),
+              Card3(
+                imgUrl:
+                    'https://recipe52.com/wp-content/uploads/2022/04/chicken-korma-pakistani-2-1024x1024.jpg',
+                title: "Chicken Karahi",
+                color: Colors.amber,
+                onTap: () {},
+              ),
             ],
           ),
         ),
