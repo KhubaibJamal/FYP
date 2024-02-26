@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/home/buttons.dart';
+import 'package:fyp/home/cards.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/search_bars.dart';
 
@@ -48,6 +49,18 @@ class Home extends StatelessWidget {
                     },
                   ),
                   const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width,
+                    title: 'Cards',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Cards(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
               const SizedBox(height: 10),
