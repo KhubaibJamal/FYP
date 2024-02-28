@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/card/card1.dart';
 import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
+import 'package:fyp/card/card4.dart';
 
 class Cards extends StatelessWidget {
   const Cards({super.key});
@@ -32,6 +33,9 @@ class Cards extends StatelessWidget {
                 color: Colors.amber,
                 onTap: () {},
               ),
+              const SizedBox(height: 10),
+              const Card4(),
+              const SizedBox(height: 10),
             ],
           ),
         ),
