@@ -4,6 +4,7 @@ import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
 import 'package:fyp/card/card4.dart';
 import 'package:fyp/card/card5.dart';
+import 'package:fyp/card/card6.dart';
 
 class Cards extends StatelessWidget {
   const Cards({super.key});
@@ -44,6 +45,8 @@ class Cards extends StatelessWidget {
                 subtitle: '30+ clients',
                 onPressed: () {},
               ),
+              const SizedBox(height: 10),
+              Card6(title: "Title Here", onMoreTap: () {}),
               const SizedBox(height: 10),
             ],
           ),
