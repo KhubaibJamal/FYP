@@ -3,6 +3,7 @@ import 'package:fyp/card/card1.dart';
 import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
 import 'package:fyp/card/card4.dart';
+import 'package:fyp/card/card5.dart';
 
 class Cards extends StatelessWidget {
   const Cards({super.key});
@@ -35,6 +36,14 @@ class Cards extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Card4(),
+              const SizedBox(height: 10),
+              Card5(
+                text: "Explore",
+                imageUrl:
+                    'https://media.designrush.com/articles/101246/conversions/app-development-process-details.jpg',
+                subtitle: '30+ clients',
+                onPressed: () {},
+              ),
               const SizedBox(height: 10),
             ],
           ),
