@@ -5,6 +5,7 @@ import 'package:fyp/card/card11.dart';
 import 'package:fyp/card/card12.dart';
 import 'package:fyp/card/card13.dart';
 import 'package:fyp/card/card14.dart';
+import 'package:fyp/card/card15.dart';
 import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
 import 'package:fyp/card/card4.dart';
@@ -92,6 +93,8 @@ class Cards extends StatelessWidget {
                 subtitle: '30+ clients',
                 onPressed: () {},
               ),
+              const SizedBox(height: 10),
+              Card15(),
               const SizedBox(height: 10),
             ],
           ),
