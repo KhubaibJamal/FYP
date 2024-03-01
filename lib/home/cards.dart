@@ -83,7 +83,7 @@ class Cards extends StatelessWidget {
               const SizedBox(height: 10),
               const Card12(),
               const SizedBox(height: 10),
-              Card13(onTopRightButtonClicked: () {}),
+              Card13(),
               const SizedBox(height: 10),
               Card14(
                 text: "Explore",

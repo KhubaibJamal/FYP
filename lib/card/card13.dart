@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Card13 extends StatefulWidget {
-  final Function onTopRightButtonClicked;
   final double bevel;
   final Offset blurOffset;
   final Color color;
   Card13({
     Key? key,
-    required this.onTopRightButtonClicked,
     this.bevel = 10.0,
   })  : blurOffset = Offset(bevel / 2, bevel / 2),
         color = Colors.grey.shade200;

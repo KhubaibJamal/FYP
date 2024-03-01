@@ -29,11 +29,13 @@ class Card8 extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.network(
-                    image,
-                    height: 100,
-                    width: 100,
-                    fit: BoxFit.cover,
+                  ClipOval(
+                    child: Image.network(
+                      image,
+                      height: 100,
+                      width: 100,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   const SizedBox(width: 20),
                   Expanded(

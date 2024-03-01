@@ -38,7 +38,14 @@ class Card1 extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Image.network(imageUrl, height: 59, fit: BoxFit.cover),
+            ClipOval(
+              child: Image.network(
+                imageUrl,
+                height: 60,
+                width: 60,
+                fit: BoxFit.cover,
+              ),
+            ),
             const SizedBox(width: 15),
             Text(
               text,

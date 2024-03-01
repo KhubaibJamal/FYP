@@ -23,7 +23,7 @@ class Card9 extends StatelessWidget {
         clipBehavior: Clip.antiAliasWithSaveLayer,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: [
             Image.network(
               image,
               height: 160,
