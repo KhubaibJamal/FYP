@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/card/card1.dart';
 import 'package:fyp/card/card10.dart';
+import 'package:fyp/card/card11.dart';
 import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
 import 'package:fyp/card/card4.dart';
@@ -74,6 +75,8 @@ class Cards extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Card10(),
+              const SizedBox(height: 10),
+              Card11(),
               const SizedBox(height: 10),
             ],
           ),
