@@ -27,12 +27,12 @@ class Card15 extends StatelessWidget {
             child: Row(
               // mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Icon(Icons.person, size: 50, color: Colors.blueAccent),
+                Icon(Icons.person, size: 50, color: Color(0xFF095ba4)),
                 SizedBox(width: 10),
                 Text(
                   "2210",
                   style: TextStyle(
-                    color: Colors.blueAccent,
+                    color: Color(0xFF095ba4),
                     fontSize: 25,
                   ),
                 ),
@@ -43,7 +43,7 @@ class Card15 extends StatelessWidget {
           Container(
             width: 150,
             decoration: const BoxDecoration(
-              color: Colors.blueAccent,
+              color: Color(0xFF095ba4),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(12),
                 bottomRight: Radius.circular(12),
