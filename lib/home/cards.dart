@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/card/card1.dart';
+import 'package:fyp/card/card10.dart';
 import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
 import 'package:fyp/card/card4.dart';
@@ -71,6 +72,8 @@ class Cards extends StatelessWidget {
                     'https://i.pinimg.com/736x/27/d5/f9/27d5f90856f3541ad7283b8ab09b6954.jpg',
                 onTap: () {},
               ),
+              const SizedBox(height: 10),
+              Card10(),
               const SizedBox(height: 10),
             ],
           ),
