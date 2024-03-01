@@ -3,6 +3,7 @@ import 'package:fyp/card/card1.dart';
 import 'package:fyp/card/card10.dart';
 import 'package:fyp/card/card11.dart';
 import 'package:fyp/card/card12.dart';
+import 'package:fyp/card/card13.dart';
 import 'package:fyp/card/card2.dart';
 import 'package:fyp/card/card3.dart';
 import 'package:fyp/card/card4.dart';
@@ -80,6 +81,8 @@ class Cards extends StatelessWidget {
               const Card11(),
               const SizedBox(height: 10),
               const Card12(),
+              const SizedBox(height: 10),
+              Card13(onTopRightButtonClicked: () {}),
               const SizedBox(height: 10),
             ],
           ),
