@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/appbars/appbar1.dart';
+import 'package:fyp/appbars/appbar2.dart';
 
 class AppBars extends StatelessWidget {
   const AppBars({super.key});
@@ -8,13 +9,16 @@ class AppBars extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Column(
             children: [
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               AppBar1(),
+              SizedBox(height: 10),
+              AppBar2(),
+              SizedBox(height: 10),
             ],
           ),
         ),
