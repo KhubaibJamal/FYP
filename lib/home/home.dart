@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/home/appbars.dart';
 import 'package:fyp/home/buttons.dart';
 import 'package:fyp/home/cards.dart';
 import 'package:fyp/home/input_text_fields.dart';
@@ -79,6 +80,18 @@ class Home extends StatelessWidget {
                     },
                   ),
                   const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'appBars',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AppBars(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               )
             ],
