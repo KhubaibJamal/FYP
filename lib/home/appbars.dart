@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/appbars/appbar1.dart';
 import 'package:fyp/appbars/appbar2.dart';
 import 'package:fyp/appbars/appbar3.dart';
+import 'package:fyp/appbars/appbar4.dart';
 
 class AppBars extends StatelessWidget {
   const AppBars({super.key});
@@ -21,6 +22,8 @@ class AppBars extends StatelessWidget {
               AppBar2(),
               SizedBox(height: 10),
               AppBar3(),
+              SizedBox(height: 10),
+              AppBar4(),
               SizedBox(height: 10),
             ],
           ),
