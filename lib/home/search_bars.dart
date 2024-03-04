@@ -6,6 +6,7 @@ import 'package:fyp/search%20bar/search_bar5.dart';
 import 'package:fyp/search%20bar/search_bar3.dart';
 import 'package:fyp/search%20bar/search_bar1.dart';
 import 'package:fyp/search%20bar/search_box10.dart';
+import 'package:fyp/search%20bar/search_box11.dart';
 import 'package:fyp/search%20bar/search_box6.dart';
 import 'package:fyp/search%20bar/search_box8.dart';
 import 'package:fyp/search%20bar/search_box9.dart';
@@ -73,6 +74,9 @@ class SearchBars extends StatelessWidget {
                 searchController: controller,
                 hintText: "Search...",
               ),
+              const SizedBox(height: 20),
+              const SearchBox11(),
+              const SizedBox(height: 20),
             ],
           ),
         ),
