@@ -5,6 +5,7 @@ import 'package:fyp/appbars/appbar3.dart';
 import 'package:fyp/appbars/appbar4.dart';
 import 'package:fyp/appbars/appbar5.dart';
 import 'package:fyp/appbars/appbar6.dart';
+import 'package:fyp/appbars/appbar7.dart';
 
 class AppBars extends StatelessWidget {
   const AppBars({super.key});
@@ -30,6 +31,8 @@ class AppBars extends StatelessWidget {
               AppBar5(),
               SizedBox(height: 10),
               AppBar6(),
+              SizedBox(height: 10),
+              AppBar7(),
               SizedBox(height: 10),
             ],
           ),
