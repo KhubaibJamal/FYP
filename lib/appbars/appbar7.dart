@@ -41,28 +41,13 @@ class AppBar7 extends StatelessWidget {
         ],
       ),
       actions: [
-        PopupMenuButton<Text>(
-          iconColor: Colors.white,
-          itemBuilder: (context) {
-            return [
-              const PopupMenuItem(
-                child: Text(
-                  'setting',
-                ),
-              ),
-              const PopupMenuItem(
-                child: Text(
-                  'change profile',
-                ),
-              ),
-              const PopupMenuItem(
-                child: Text(
-                  'link device',
-                ),
-              ),
-            ];
-          },
-        )
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.white,
+          ),
+        ),
       ],
     );
   }
