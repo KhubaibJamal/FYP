@@ -10,12 +10,11 @@ class AppBar7 extends StatelessWidget {
       centerTitle: true,
       backgroundColor: const Color(0xFF4A001F),
       leading: Padding(
-        padding: const EdgeInsets.only(left: 6.0),
+        padding: const EdgeInsets.all(8.0),
         child: ClipOval(
           child: Image.network(
             'https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.webp?b=1&s=170667a&w=0&k=20&c=YQ_j83pg9fB-HWOd1Qur3_kBmG_ot_hZty8pvoFkr6A=',
-            height: 30,
-            width: 30,
+            fit: BoxFit.cover,
           ),
         ),
       ),
