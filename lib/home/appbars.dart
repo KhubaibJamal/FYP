@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/appbars/appbar1.dart';
 import 'package:fyp/appbars/appbar10.dart';
+import 'package:fyp/appbars/appbar11.dart';
+import 'package:fyp/appbars/appbar12.dart';
+import 'package:fyp/appbars/appbar13.dart';
 import 'package:fyp/appbars/appbar2.dart';
 import 'package:fyp/appbars/appbar3.dart';
 import 'package:fyp/appbars/appbar4.dart';
@@ -42,6 +45,12 @@ class AppBars extends StatelessWidget {
               AppBar9(),
               SizedBox(height: 10),
               AppBar10(),
+              SizedBox(height: 10),
+              AppBar11(),
+              SizedBox(height: 10),
+              AppBar12(),
+              SizedBox(height: 10),
+              AppBar13(),
               SizedBox(height: 10),
             ],
           ),
