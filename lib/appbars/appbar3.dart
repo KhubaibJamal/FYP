@@ -12,7 +12,7 @@ class AppBar3 extends StatelessWidget {
         "Widget World",
         style: TextStyle(color: Colors.white),
       ),
-      backgroundColor: const Color(0xff4338CA),
+      backgroundColor: const Color(0xff240A34),
       flexibleSpace: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
