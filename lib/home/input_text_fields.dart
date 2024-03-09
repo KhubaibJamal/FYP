@@ -5,6 +5,7 @@ import 'package:fyp/text%20fields/input_text_field11.dart';
 import 'package:fyp/text%20fields/input_text_field12.dart';
 import 'package:fyp/text%20fields/input_text_field13.dart';
 import 'package:fyp/text%20fields/input_text_field14.dart';
+import 'package:fyp/text%20fields/input_text_field15.dart';
 import 'package:fyp/text%20fields/input_text_field2.dart';
 import 'package:fyp/text%20fields/input_text_field3.dart';
 import 'package:fyp/text%20fields/input_text_field4.dart';
@@ -91,7 +92,9 @@ class InputTextFields extends StatelessWidget {
                 hintText: "Enter you name here.",
               ),
               const SizedBox(height: 10),
-              const InputTextField14()
+              const InputTextField14(),
+              const SizedBox(height: 10),
+              const InputTextField15(),
             ],
           ),
         ),
