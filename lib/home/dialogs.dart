@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/dialogs/dialog1.dart';
+import 'package:fyp/dialogs/dialog2.dart';
 
 class Dialogs extends StatelessWidget {
   const Dialogs({super.key});
@@ -8,13 +9,16 @@ class Dialogs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Column(
             children: [
-              const SizedBox(height: 10),
               Dialog1(),
+              Dialog2(
+                title: "Confirm?",
+                description: 'Want to change?',
+              ),
             ],
           ),
         ),
