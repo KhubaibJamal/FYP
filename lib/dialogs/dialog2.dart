@@ -13,16 +13,45 @@ class Dialog2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text(title),
-      content: Text(description),
+      backgroundColor: const Color(0xFF344955),
+      title: Text(
+        title,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      content: Text(
+        description,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 18,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
       actions: [
         TextButton(
           onPressed: () {},
-          child: const Text("Yes"),
+          child: const Text(
+            "Yes",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
         ),
         TextButton(
           onPressed: () {},
-          child: const Text("No"),
+          child: const Text(
+            "No",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
         ),
       ],
     );

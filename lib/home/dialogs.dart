@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/dialogs/dialog1.dart';
 import 'package:fyp/dialogs/dialog2.dart';
 import 'package:fyp/dialogs/dialog3.dart';
+import 'package:fyp/dialogs/dialog4.dart';
 
 class Dialogs extends StatelessWidget {
   const Dialogs({super.key});
@@ -9,6 +10,7 @@ class Dialogs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFebebeb),
       appBar: AppBar(),
       body: const SingleChildScrollView(
         child: Padding(
@@ -21,6 +23,7 @@ class Dialogs extends StatelessWidget {
                 description: 'Want to change?',
               ),
               Dialog3(),
+              Dialog4(),
             ],
           ),
         ),
