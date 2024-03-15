@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/home/appbars.dart';
 import 'package:fyp/home/buttons.dart';
 import 'package:fyp/home/cards.dart';
+import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/search_bars.dart';
 
@@ -87,11 +88,29 @@ class Home extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => AppBars(),
+                          builder: (context) => const AppBars(),
                         ),
                       );
                     },
                   ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Dialogs',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Dialogs(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
                 ],
               )
             ],
