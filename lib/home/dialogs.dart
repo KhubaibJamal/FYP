@@ -5,6 +5,7 @@ import 'package:fyp/dialogs/dialog3.dart';
 import 'package:fyp/dialogs/dialog4.dart';
 import 'package:fyp/dialogs/dialog5.dart';
 import 'package:fyp/dialogs/dialog6.dart';
+import 'package:fyp/dialogs/dialog7.dart';
 
 class Dialogs extends StatelessWidget {
   const Dialogs({super.key});
@@ -28,6 +29,7 @@ class Dialogs extends StatelessWidget {
               Dialog4(),
               Dialog5(),
               Dialog6(),
+              Dialog7(),
             ],
           ),
         ),
