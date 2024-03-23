@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/dialogs/dialog1.dart';
+import 'package:fyp/dialogs/dialog10.dart';
 import 'package:fyp/dialogs/dialog2.dart';
 import 'package:fyp/dialogs/dialog3.dart';
 import 'package:fyp/dialogs/dialog4.dart';
@@ -34,6 +35,7 @@ class Dialogs extends StatelessWidget {
               Dialog7(),
               Dialog8(),
               Dialog9(),
+              Dialog10(),
             ],
           ),
         ),
