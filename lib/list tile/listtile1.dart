@@ -6,6 +6,7 @@ class ListTile1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ListTile(
+      tileColor: Color(0xFFDDDDDD),
       leading: CircleAvatar(
         backgroundColor: Color(0xff764abc),
         child: Text('1'),
