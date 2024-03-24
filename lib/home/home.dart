@@ -4,6 +4,7 @@ import 'package:fyp/home/buttons.dart';
 import 'package:fyp/home/cards.dart';
 import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/input_text_fields.dart';
+import 'package:fyp/home/listtiles.dart';
 import 'package:fyp/home/search_bars.dart';
 
 class Home extends StatelessWidget {
@@ -106,6 +107,19 @@ class Home extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Dialogs(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'List tiles',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ListTiles(),
                         ),
                       );
                     },
