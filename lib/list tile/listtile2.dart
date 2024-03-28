@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 class ListTile2 extends StatelessWidget {
   final String text;
-
+  final String subtitle;
   final Function() onTap;
   final Color color;
   const ListTile2(
       {required this.text,
       required this.onTap,
       this.color = Colors.white,
-      Key? key})
+      Key? key, required this.subtitle})
       : super(key: key);
 
   @override
@@ -31,8 +31,8 @@ class ListTile2 extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        subtitle: const Text(
-          "5 items in your cart",
+        subtitle:  Text(
+          subtitle,
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w700,

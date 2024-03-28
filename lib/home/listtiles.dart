@@ -17,7 +17,11 @@ class ListTiles extends StatelessWidget {
             children: [
               const ListTile1(),
               const SizedBox(height: 10),
-              ListTile2(text: "My Cart", onTap: () {}),
+              ListTile2(
+                text: "My Cart",
+                subtitle: "5 items in your cart",
+                onTap: () {},
+              ),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
