@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/list%20tile/listtile1.dart';
+import 'package:fyp/list%20tile/listtile2.dart';
 
 class ListTiles extends StatelessWidget {
   const ListTiles({super.key});
@@ -9,13 +10,17 @@ class ListTiles extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFebebeb),
       appBar: AppBar(),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              ListTile1(),
-              SizedBox(height: 10),
+              const ListTile1(),
+              const SizedBox(height: 10),
+              ListTile2(text: "My Cart", onTap: () {}),
+              const SizedBox(height: 10),
+              const SizedBox(height: 10),
+              const SizedBox(height: 10),
             ],
           ),
         ),
@@ -23,7 +28,7 @@ class ListTiles extends StatelessWidget {
     );
   }
 }
-// FFD23F
+
 // 337357
 // 12372A
 // FC6736
