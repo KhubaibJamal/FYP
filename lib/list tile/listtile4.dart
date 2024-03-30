@@ -15,6 +15,7 @@ class ListTile4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      tileColor: Colors.white,
       leading: ClipRRect(
         borderRadius: BorderRadius.circular(5),
         child: Image.network(dishImage),
