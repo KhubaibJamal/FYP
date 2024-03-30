@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/list%20tile/listtile1.dart';
 import 'package:fyp/list%20tile/listtile2.dart';
 import 'package:fyp/list%20tile/listtile3.dart';
+import 'package:fyp/list%20tile/listtile4.dart';
 
 class ListTiles extends StatelessWidget {
   const ListTiles({super.key});
@@ -29,6 +30,14 @@ class ListTiles extends StatelessWidget {
                 likes: '130',
                 subtitle: '130 Reviews',
               ),
+              const SizedBox(height: 10),
+              const ListTile4(
+                title: "Chicken Qorma",
+                subtitle: " 4.9 Reviews",
+              ),
+              const SizedBox(height: 10),
+              const SizedBox(height: 10),
+              const SizedBox(height: 10),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
             ],
