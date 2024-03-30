@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/list%20tile/listtile1.dart';
 import 'package:fyp/list%20tile/listtile2.dart';
+import 'package:fyp/list%20tile/listtile3.dart';
 
 class ListTiles extends StatelessWidget {
   const ListTiles({super.key});
@@ -23,6 +24,11 @@ class ListTiles extends StatelessWidget {
                 onTap: () {},
               ),
               const SizedBox(height: 10),
+              const ListTile3(
+                title: 'Lily Poppins',
+                likes: '130',
+                subtitle: '130 Reviews',
+              ),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
             ],
