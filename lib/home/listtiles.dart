@@ -3,6 +3,7 @@ import 'package:fyp/list%20tile/listtile1.dart';
 import 'package:fyp/list%20tile/listtile2.dart';
 import 'package:fyp/list%20tile/listtile3.dart';
 import 'package:fyp/list%20tile/listtile4.dart';
+import 'package:fyp/list%20tile/listtile5.dart';
 
 class ListTiles extends StatelessWidget {
   const ListTiles({super.key});
@@ -36,6 +37,11 @@ class ListTiles extends StatelessWidget {
                 subtitle: " 4.9 Reviews",
               ),
               const SizedBox(height: 10),
+              const ListTile5(
+                title: "Synthia Lamb",
+                subtitle: '4 days ago',
+                comment: 'Here are some text',
+              ),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
@@ -48,7 +54,6 @@ class ListTiles extends StatelessWidget {
   }
 }
 
-// 337357
 // 12372A
 // FC6736
 // 0A1D56
