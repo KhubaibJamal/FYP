@@ -7,6 +7,7 @@ import 'package:fyp/list%20tile/listtile5.dart';
 import 'package:fyp/list%20tile/listtile6.dart';
 import 'package:fyp/list%20tile/listtile7.dart';
 import 'package:fyp/list%20tile/listtile8.dart';
+import 'package:fyp/list%20tile/listtile9.dart';
 
 class ListTiles extends StatelessWidget {
   const ListTiles({super.key});
@@ -54,6 +55,13 @@ class ListTiles extends StatelessWidget {
                 title: "List Tile",
                 description: 'This is tile\'s description',
               ),
+              const SizedBox(height: 10),
+              const ListTile9(
+                title: "List Tile",
+                subtitle: 'This is tile\'s description',
+              ),
+              const SizedBox(height: 10),
+              const SizedBox(height: 10),
               const SizedBox(height: 10),
             ],
           ),
