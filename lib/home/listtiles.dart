@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/list%20tile/listtile1.dart';
 import 'package:fyp/list%20tile/listtile10.dart';
+import 'package:fyp/list%20tile/listtile11.dart';
 import 'package:fyp/list%20tile/listtile2.dart';
 import 'package:fyp/list%20tile/listtile3.dart';
 import 'package:fyp/list%20tile/listtile4.dart';
@@ -79,6 +80,11 @@ class _ListTilesState extends State<ListTiles> {
                 },
               ),
               const SizedBox(height: 10),
+              const ListTile11(
+                title: "Appearance",
+                subtitle: "System, Dark Mode, Light Mode",
+                leadingText: "System",
+              ),
               const SizedBox(height: 10),
             ],
           ),
