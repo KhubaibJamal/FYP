@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/list%20tile/listtile1.dart';
+import 'package:fyp/list%20tile/listtile10.dart';
 import 'package:fyp/list%20tile/listtile2.dart';
 import 'package:fyp/list%20tile/listtile3.dart';
 import 'package:fyp/list%20tile/listtile4.dart';
@@ -9,9 +10,15 @@ import 'package:fyp/list%20tile/listtile7.dart';
 import 'package:fyp/list%20tile/listtile8.dart';
 import 'package:fyp/list%20tile/listtile9.dart';
 
-class ListTiles extends StatelessWidget {
+class ListTiles extends StatefulWidget {
   const ListTiles({super.key});
 
+  @override
+  State<ListTiles> createState() => _ListTilesState();
+}
+
+class _ListTilesState extends State<ListTiles> {
+  bool allowNotifications = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,6 +68,16 @@ class ListTiles extends StatelessWidget {
                 subtitle: 'This is tile\'s description',
               ),
               const SizedBox(height: 10),
+              ListTile10(
+                title: "Notification",
+                subtitle: "Want to receive notification?",
+                switchValue: allowNotifications,
+                onChanged: (value) {
+                  setState(() {
+                    allowNotifications = !allowNotifications;
+                  });
+                },
+              ),
               const SizedBox(height: 10),
               const SizedBox(height: 10),
             ],
