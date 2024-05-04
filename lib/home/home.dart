@@ -6,6 +6,7 @@ import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
 import 'package:fyp/home/search_bars.dart';
+import 'package:fyp/templates/auth_template/welcome_screen.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -126,7 +127,25 @@ class Home extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                 ],
-              )
+              ),
+              const Divider(thickness: 5, color: Colors.black),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Auth Template',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const WelcomeScreen(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                ],
+              ),
             ],
           ),
         ),
