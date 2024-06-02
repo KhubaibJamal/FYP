@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/home/appbars.dart';
 import 'package:fyp/home/buttons.dart';
 import 'package:fyp/home/cards.dart';
+import 'package:fyp/home/carousels.dart';
 import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
@@ -126,6 +127,37 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
+                  const SizedBox(width: 10),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Carousel',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Carousels(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                  // HomeWidget(
+                  //   width: width * 1.5,
+                  //   title: 'List tiles',
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const ListTiles(),
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
                   const SizedBox(width: 10),
                 ],
               ),
