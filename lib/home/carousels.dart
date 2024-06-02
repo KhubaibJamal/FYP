@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/carousel/carousel1.dart';
+import 'package:fyp/carousel/carousel2.dart';
 
 class Carousels extends StatelessWidget {
   const Carousels({super.key});
@@ -8,9 +9,10 @@ class Carousels extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const Column(
+      body: Column(
         children: [
-          Expanded(child: Carousel1()),
+          const Expanded(child: Carousel1()),
+          Expanded(child: Carousel2()),
         ],
       ),
     );
