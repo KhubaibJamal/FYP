@@ -3,6 +3,7 @@ import 'package:fyp/home/appbars.dart';
 import 'package:fyp/home/buttons.dart';
 import 'package:fyp/home/cards.dart';
 import 'package:fyp/home/carousels.dart';
+import 'package:fyp/home/date_pickers.dart';
 import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
@@ -157,6 +158,37 @@ class Home extends StatelessWidget {
                           builder: (context) => const SnackBars(),
                         ),
                       );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Date Picker',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DatePickers(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Snack bar',
+                    onTap: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const SnackBars(),
+                      //   ),
+                      // );
                     },
                   ),
                   const SizedBox(width: 10),

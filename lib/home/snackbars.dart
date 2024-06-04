@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/snack%20bar/snack_bar1.dart';
 
-class SnackBars extends StatefulWidget {
+class SnackBars extends StatelessWidget {
   const SnackBars({super.key});
 
-  @override
-  State<SnackBars> createState() => _SnackBarsState();
-}
-
-class _SnackBarsState extends State<SnackBars> {
-  bool allowNotifications = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
