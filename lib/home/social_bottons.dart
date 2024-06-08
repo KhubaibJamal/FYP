@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/social%20buttons/social_button1.dart';
+import 'package:fyp/social%20buttons/social_button2.dart';
 
 class SocialButtons extends StatelessWidget {
   const SocialButtons({super.key});
@@ -13,7 +14,7 @@ class SocialButtons extends StatelessWidget {
         child: Column(
           children: [
             SocialButton1(onPressed: () {}),
-            const SizedBox(height: 10),
+            SocialButton2(onPressed: () {}),
           ],
         ),
       ),
