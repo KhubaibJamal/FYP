@@ -9,7 +9,8 @@ class ListTile2 extends StatelessWidget {
       {required this.text,
       required this.onTap,
       this.color = Colors.white,
-      Key? key, required this.subtitle})
+      Key? key,
+      required this.subtitle})
       : super(key: key);
 
   @override
@@ -31,9 +32,9 @@ class ListTile2 extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        subtitle:  Text(
+        subtitle: Text(
           subtitle,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w700,
           ),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/carousel/carousel1.dart';
-import 'package:fyp/carousel/carousel2.dart';
 import 'package:fyp/carousel/carousel3.dart';
 
 class Carousels extends StatelessWidget {
