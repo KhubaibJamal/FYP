@@ -9,6 +9,7 @@ import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
 import 'package:fyp/home/listviews.dart';
 import 'package:fyp/home/search_bars.dart';
+import 'package:fyp/home/sliders.dart';
 import 'package:fyp/home/snackbars.dart';
 import 'package:fyp/home/social_bottons.dart';
 import 'package:fyp/templates/auth_template/welcome_screen.dart';
@@ -212,18 +213,18 @@ class Home extends StatelessWidget {
                     },
                   ),
                   const SizedBox(width: 10),
-                  // HomeWidget(
-                  //   width: width * 1.5,
-                  //   title: 'List View',
-                  //   onTap: () {
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => const ListViews(),
-                  //       ),
-                  //     );
-                  //   },
-                  // ),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Sliders',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Sliders(),
+                        ),
+                      );
+                    },
+                  ),
                   const SizedBox(width: 10),
                 ],
               ),
