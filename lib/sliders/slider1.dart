@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Sliders1 extends StatefulWidget {
+class Slider1 extends StatefulWidget {
   final double min;
   final double max;
   final double? initialValue;
   final Function(double) onChange;
-  const Sliders1({
+  const Slider1({
     required this.min,
     required this.max,
     this.initialValue = 0.0,
@@ -14,10 +14,10 @@ class Sliders1 extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _Sliders1State createState() => _Sliders1State();
+  _Slider1State createState() => _Slider1State();
 }
 
-class _Sliders1State extends State<Sliders1> {
+class _Slider1State extends State<Slider1> {
   late double _currentSliderValue;
 
   @override
