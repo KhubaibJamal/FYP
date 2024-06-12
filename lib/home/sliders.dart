@@ -3,6 +3,7 @@ import 'package:fyp/sliders/slider1.dart';
 import 'package:fyp/sliders/slider2.dart';
 import 'package:fyp/sliders/slider3.dart';
 import 'package:fyp/sliders/slider4.dart';
+import 'package:fyp/sliders/slider5.dart';
 
 class Sliders extends StatelessWidget {
   const Sliders({super.key});
@@ -43,6 +44,13 @@ class Sliders extends StatelessWidget {
                 max: 100.0,
                 initialValue: 55.0,
                 divisions: 20,
+                onChange: (value) {},
+              ),
+              const SizedBox(height: 10),
+              Slider5(
+                min: 0.0,
+                max: 100.0,
+                initialValue: 35.0,
                 onChange: (value) {},
               ),
             ],
