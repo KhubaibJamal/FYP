@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/bottom%20modal%20sheet/bottom_sheet.4.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet1.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet2.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet3.dart';
@@ -50,6 +51,18 @@ class BottomSheets extends StatelessWidget {
               },
               child: const Text("Bottom Sheet 3"),
             ),
+            const SizedBox(height: 20),
+            GestureDetector(
+              onTap: () async {
+                showModalBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      return const BottomSheet4();
+                    });
+                return;
+              },
+              child: const Text("Bottom Sheet 4"),
+            )
           ],
         ),
       ),
