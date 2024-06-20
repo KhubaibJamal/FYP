@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/home/appbars.dart';
+import 'package:fyp/home/bottom_sheets.dart';
 import 'package:fyp/home/buttons.dart';
 import 'package:fyp/home/cards.dart';
 import 'package:fyp/home/carousels.dart';
@@ -225,7 +226,36 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Bottom Sheet',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const BottomSheets(),
+                        ),
+                      );
+                    },
+                  ),
                   const SizedBox(width: 10),
+                  // HomeWidget(
+                  //   width: width * 1.5,
+                  //   title: 'Sliders',
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const Sliders(),
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
                 ],
               ),
               const Divider(thickness: 5, color: Colors.black),

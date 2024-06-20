@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
 }
 
 
-// slider
 // navigation bar
 // drawer
 // loading indicator
