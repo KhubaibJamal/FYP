@@ -5,6 +5,7 @@ import 'package:fyp/bottom%20modal%20sheet/bottom_sheet2.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet3.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet5.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet6.dart';
+import 'package:fyp/bottom%20modal%20sheet/bottom_sheet7.dart';
 
 class BottomSheets extends StatelessWidget {
   const BottomSheets({super.key});
@@ -88,7 +89,19 @@ class BottomSheets extends StatelessWidget {
                 return;
               },
               child: const Text("Bottom Sheet 6"),
-            )
+            ),
+            const SizedBox(height: 20),
+            GestureDetector(
+              onTap: () async {
+                showModalBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      return BottomSheet7();
+                    });
+                return;
+              },
+              child: const Text("Bottom Sheet 7"),
+            ),
           ],
         ),
       ),
