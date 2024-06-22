@@ -12,7 +12,7 @@ class ListView2 extends StatelessWidget {
         height: 175,
         child: ListView(
           scrollDirection: Axis.horizontal,
-          children: [
+          children: const [
             Card(
                 "Vegan",
                 "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/Resturant%20Image%20(1).png?alt=media&token=461162b1-686b-4b0e-a3ee-fae1cb8b5b33",
@@ -37,7 +37,8 @@ class Card extends StatelessWidget {
   final String imageUrl;
   final String subtitle;
 
-  Card(this.text, this.imageUrl, this.subtitle, {Key? key}) : super(key: key);
+  const Card(this.text, this.imageUrl, this.subtitle, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

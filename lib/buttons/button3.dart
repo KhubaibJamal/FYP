@@ -39,7 +39,7 @@ class GradientRoundedButton3 extends StatelessWidget {
             )),
         child: Text(
           btnText,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ),
     );

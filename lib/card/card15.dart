@@ -25,7 +25,6 @@ class Card15 extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.only(left: 10.0, top: 30),
             child: Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Icon(Icons.person, size: 50, color: Color(0xFF095ba4)),
                 SizedBox(width: 10),

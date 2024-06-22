@@ -47,7 +47,6 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
             MaterialButton(
               onPressed: () {
                 setState(() {
-                  // currentScreen = const WidgetScreen();
                   currentTab = 1;
                 });
               },
@@ -62,7 +61,6 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
             MaterialButton(
               onPressed: () {
                 setState(() {
-                  // currentScreen = const WidgetScreen();
                   currentTab = 2;
                 });
               },
@@ -77,7 +75,6 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
             MaterialButton(
               onPressed: () {
                 setState(() {
-                  // currentScreen = const WidgetScreen();
                   currentTab = 3;
                 });
               },

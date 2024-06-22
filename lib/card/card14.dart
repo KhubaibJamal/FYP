@@ -9,7 +9,7 @@ class Card14 extends StatefulWidget {
   final Offset blurOffset;
   final Color color;
 
-  Card14({
+  Card14({super.key, 
     required this.text,
     required this.imageUrl,
     required this.subtitle,

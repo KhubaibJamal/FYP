@@ -91,7 +91,6 @@ class AnimatedProgressBar extends StatelessWidget {
               SimpleCircularProgressBar(
                 size: 250,
                 maxValue: 1000,
-                // progressStrokeWidth: 12,
                 backStrokeWidth: 4,
                 backColor: const Color(0xff414958),
                 progressColors: const [

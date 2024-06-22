@@ -48,7 +48,6 @@ class BottomSheet7 extends StatelessWidget {
                 backgroundColor: const Color(0xFF12db64),
               ),
               onPressed: () {
-                // Handle send action
               },
               child: const Text(
                 'Send',

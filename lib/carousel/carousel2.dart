@@ -13,34 +13,6 @@ const List<String> urls = [
 
 List<Widget> cards = urls.map((url) => SwipeImage(url: url)).toList();
 
-// -=-=--=- (Small Cards) =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-// List<Widget> cards = [
-//   CardFb1(
-//       text: "Explore",
-//       imageUrl:
-//           "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/illustrations%2Fundraw_Working_late_re_0c3y%201.png?alt=media&token=7b880917-2390-4043-88e5-5d58a9d70555",
-//       subtitle: "+30 books",
-//       onPressed: () {}),
-//   CardFb1(
-//       text: "Implore",
-//       imageUrl:
-//           "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/illustrations%2Fundraw_Working_late_re_0c3y%201.png?alt=media&token=7b880917-2390-4043-88e5-5d58a9d70555",
-//       subtitle: "+30 books",
-//       onPressed: () {}),
-//   CardFb1(
-//       text: "Deplore",
-//       imageUrl:
-//           "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/illustrations%2Fundraw_Working_late_re_0c3y%201.png?alt=media&token=7b880917-2390-4043-88e5-5d58a9d70555",
-//       subtitle: "+30 books",
-//       onPressed: () {}),
-//     CardFb1(
-//       text: "SeaFloor",
-//       imageUrl:
-//           "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/illustrations%2Fundraw_Working_late_re_0c3y%201.png?alt=media&token=7b880917-2390-4043-88e5-5d58a9d70555",
-//       subtitle: "+30 books",
-//       onPressed: () {})
-// ];
-
 class SwipeImage extends StatelessWidget {
   final String url;
   const SwipeImage({Key? key, required this.url}) : super(key: key);
@@ -72,10 +44,8 @@ class Carousel2 extends StatefulWidget {
   final Function? onRightSwipe;
   final Function? onLeftSwipe;
   final Function? onUpSwipe;
-  // final List<Widget> cards;
-  Carousel2({
+  const Carousel2({
     Key? key,
-    // required this.cards,
     this.onRightSwipe,
     this.onLeftSwipe,
     this.onUpSwipe,
@@ -133,7 +103,8 @@ class _Carousel2State extends State<Carousel2> {
         onPanUpdate: (details) {
           setState(() {
             _dragPosition += details.delta;
-            _angle = widget.maxTiltAngle! * _dragPosition.dx / _screenSize.width;
+            _angle =
+                widget.maxTiltAngle! * _dragPosition.dx / _screenSize.width;
           });
         },
         onPanEnd: (details) async {

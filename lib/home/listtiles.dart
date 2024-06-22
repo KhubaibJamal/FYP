@@ -93,13 +93,3 @@ class _ListTilesState extends State<ListTiles> {
     );
   }
 }
-
-// 12372A
-// FC6736
-// D24545
-// 43766C
-// F8FAE5
-// 8CB9BD
-//  bg color: 76453B text color: F8FAE5
-//  bg color: ADBC9F text color: 12372A
-//  bg color: 0C2D57 text color: FC6736

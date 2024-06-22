@@ -34,7 +34,6 @@ class Home extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  // buttons
                   HomeWidget(
                     width: width,
                     title: 'Buttons',

@@ -24,7 +24,7 @@ class BottomSheet3 extends StatelessWidget {
             top: 25.32,
             child: GestureDetector(
               onTap: () async {},
-              child: const bottom_sheet_text_widget(
+              child: const BottomSheetTextWidget(
                 text: "image",
                 imageIcon: 'assets/image icon.png',
               ),
@@ -35,7 +35,7 @@ class BottomSheet3 extends StatelessWidget {
             top: 25.32,
             child: GestureDetector(
               onTap: () async {},
-              child: const bottom_sheet_text_widget(
+              child: const BottomSheetTextWidget(
                 text: "video",
                 imageIcon: 'assets/video.png',
               ),
@@ -46,7 +46,7 @@ class BottomSheet3 extends StatelessWidget {
             top: 128.08,
             child: GestureDetector(
               onTap: () async {},
-              child: const bottom_sheet_text_widget(
+              child: const BottomSheetTextWidget(
                 text: "document",
                 imageIcon: "assets/document.png",
               ),
@@ -57,7 +57,7 @@ class BottomSheet3 extends StatelessWidget {
             top: 128.08,
             child: GestureDetector(
               onTap: () {},
-              child: const bottom_sheet_text_widget(
+              child: const BottomSheetTextWidget(
                 text: "opinionPoll",
                 imageIcon: "assets/poll.png",
               ),
@@ -68,7 +68,7 @@ class BottomSheet3 extends StatelessWidget {
             top: 128.08,
             child: GestureDetector(
               onTap: () {},
-              child: const bottom_sheet_text_widget(
+              child: const BottomSheetTextWidget(
                 text: "events",
                 imageIcon: "assets/event.png",
               ),
@@ -80,8 +80,8 @@ class BottomSheet3 extends StatelessWidget {
   }
 }
 
-class bottom_sheet_text_widget extends StatelessWidget {
-  const bottom_sheet_text_widget(
+class BottomSheetTextWidget extends StatelessWidget {
+  const BottomSheetTextWidget(
       {super.key, required this.text, required this.imageIcon});
 
   final String text;

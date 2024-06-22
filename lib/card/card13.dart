@@ -5,7 +5,7 @@ class Card13 extends StatefulWidget {
   final Offset blurOffset;
   final Color color;
   Card13({
-    Key? key,
+    super.key,
     this.bevel = 10.0,
   })  : blurOffset = Offset(bevel / 2, bevel / 2),
         color = Colors.grey.shade200;
@@ -91,7 +91,7 @@ class _Card13State extends State<Card13> {
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
-              padding: EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(15.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,

@@ -9,7 +9,7 @@ class Carousels extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(),
-      body: Column(
+      body: const Column(
         children: [
           // const Expanded(child: Carousel1()),
           // Expanded(child: Carousel2()),

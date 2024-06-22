@@ -12,8 +12,8 @@ class _BottomSheet11State extends State<BottomSheet11> {
 
   final List<Widget> steps = [
     const Step1(),
-    Step2(),
-    Step3(),
+    const Step2(),
+    const Step3(),
   ];
   final List<String> stepTitles = [
     'Type',

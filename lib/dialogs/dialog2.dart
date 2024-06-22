@@ -16,7 +16,7 @@ class Dialog2 extends StatelessWidget {
       backgroundColor: const Color(0xFF344955),
       title: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
           fontSize: 28,
           fontWeight: FontWeight.bold,
@@ -24,7 +24,7 @@ class Dialog2 extends StatelessWidget {
       ),
       content: Text(
         description,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
           fontSize: 18,
           fontWeight: FontWeight.w500,

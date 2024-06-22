@@ -180,7 +180,7 @@ class RoundSliderThumbShape extends SliderComponentShape {
   final double elevation;
 
   final String thumbText;
-  final thumbTextStyle;
+  final TextStyle thumbTextStyle;
 
   @override
   Size getPreferredSize(bool isEnabled, bool isDiscrete) {

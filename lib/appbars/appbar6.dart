@@ -7,7 +7,6 @@ class AppBar6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       automaticallyImplyLeading: false,
-      // elevation: 1,
       backgroundColor: const Color(0xFF124076),
       leading: const Padding(
         padding: EdgeInsets.only(left: 6.0, top: 6.0),

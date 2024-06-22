@@ -55,7 +55,6 @@ class Dialog12 extends StatelessWidget {
             child: const Text(
               'Keep Flying',
               style: TextStyle(
-                // fontSize: 18,
                 color: Colors.white,
               ),
             ),

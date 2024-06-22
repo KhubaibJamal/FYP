@@ -30,7 +30,6 @@ class _DatePickersState extends State<DatePickers> {
                   lastDate: DateTime(2101),
                   helpText: 'Select a date',
                 );
-                print(newDate);
               },
               child: const Text("Date Picker 1"),
             ),
@@ -44,7 +43,6 @@ class _DatePickersState extends State<DatePickers> {
                   lastDate: DateTime(2030),
                   helpText: 'Select a date',
                 );
-                print(newDate);
               },
               child: const Text("Date Picker 2"),
             ),
@@ -59,7 +57,6 @@ class _DatePickersState extends State<DatePickers> {
                 if (pickedTime != null && pickedTime != _selectedTime) {
                   _selectedTime = pickedTime;
                 }
-                print(pickedTime);
               },
               child: const Text("Time Picker 3"),
             ),
@@ -75,7 +72,6 @@ class _DatePickersState extends State<DatePickers> {
                         initialDateTime: selectedTime,
                         mode: CupertinoDatePickerMode.time,
                         onDateTimeChanged: (DateTime newTime) {
-                          // _selectedTime = newTime as TimeOfDay?;
                         },
                         use24hFormat: false,
                       ),

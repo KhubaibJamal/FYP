@@ -6,7 +6,7 @@ class ToggleIconButton14 extends StatefulWidget {
   final bool multipleSelectionsAllowed;
   final bool stateContained;
   final bool canUnToggle;
-  ToggleIconButton14(
+  const ToggleIconButton14(
       {required this.icons,
       required this.selected,
       this.stateContained = true,
@@ -26,6 +26,7 @@ class _ToggleIconButton14State extends State<ToggleIconButton14> {
     super.initState();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
@@ -42,9 +43,7 @@ class _ToggleIconButton14State extends State<ToggleIconButton14> {
             isSelected: isSelected,
             highlightColor: Colors.transparent,
             onPressed: (index) {
-              // send callback
               widget.selected(index);
-              // if you wish to have state:
               if (widget.stateContained) {
                 if (!widget.multipleSelectionsAllowed) {
                   final selectedIndex = isSelected[index];

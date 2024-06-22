@@ -100,7 +100,7 @@ class _CustomTextField2State extends State<CustomTextField2> {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12.0),
-          borderSide: const BorderSide(color: const Color(0xff7e0102)),
+          borderSide: const BorderSide(color: Color(0xff7e0102)),
         ),
       ),
       controller: widget.controller,
@@ -159,7 +159,6 @@ class _CustomPasswordTextFieldState extends State<CustomPasswordTextField> {
                 icon: passwordIcon(obscureText),
               ),
         contentPadding: const EdgeInsets.all(20.0),
-        // fillColor: Theme.of(context).scaffoldBackgroundColor,
         fillColor: const Color(0xFFeef4fb).withOpacity(0.7),
         filled: true,
         label: Text(widget.hintText),

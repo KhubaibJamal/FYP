@@ -148,19 +148,17 @@ class _LikeButtonState extends State<LikeButton> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: IconButton(
-        icon: Icon(
-          isLiked ? Icons.favorite : Icons.favorite_border,
-          color: widget.color,
-        ),
-        onPressed: () {
-          setState(() {
-            isLiked = !isLiked;
-          });
-          widget.onPressed();
-        },
+    return IconButton(
+      icon: Icon(
+        isLiked ? Icons.favorite : Icons.favorite_border,
+        color: widget.color,
       ),
+      onPressed: () {
+        setState(() {
+          isLiked = !isLiked;
+        });
+        widget.onPressed();
+      },
     );
   }
 }

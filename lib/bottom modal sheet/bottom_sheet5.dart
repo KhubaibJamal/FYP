@@ -76,7 +76,6 @@ class _BottomSheet5State extends State<BottomSheet5> {
                 },
               ),
 
-              // genders
               SizedBox(width: width * 0.3),
               const Text(
                 "Gender",

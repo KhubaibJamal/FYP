@@ -27,7 +27,6 @@ class MiddleTextSearchBar2 extends StatelessWidget {
         onChanged: (value) {},
         style: const TextStyle(fontSize: 14),
         decoration: InputDecoration(
-          // prefixIcon: Icon(Icons.email),
           prefixIcon:
               const Icon(Icons.search, size: 20, color: Color(0xffFF5A60)),
           filled: true,

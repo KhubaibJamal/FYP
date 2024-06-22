@@ -50,7 +50,6 @@ class Dialog7 extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            // Handle the submit action
           },
         ),
       ],
