@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/bottom%20modal%20sheet/bottom_sheet10.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet4.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet1.dart';
 import 'package:fyp/bottom%20modal%20sheet/bottom_sheet2.dart';
@@ -119,13 +120,6 @@ class BottomSheets extends StatelessWidget {
             const SizedBox(height: 20),
             GestureDetector(
               onTap: () async {
-                // showModalBottomSheet(
-                //     isScrollControlled: true,
-                //     context: context,
-                //     builder: (context) {
-                //       return const BottomSheet9();
-                //     });
-                // return;
                 showModalBottomSheet(
                     isScrollControlled: true,
                     context: context,
@@ -141,6 +135,18 @@ class BottomSheets extends StatelessWidget {
                 return;
               },
               child: const Text("Bottom Sheet 9"),
+            ),
+            const SizedBox(height: 20),
+            GestureDetector(
+              onTap: () async {
+                showModalBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      return const BottomSheet10();
+                    });
+                return;
+              },
+              child: const Text("Bottom Sheet 10"),
             ),
           ],
         ),
