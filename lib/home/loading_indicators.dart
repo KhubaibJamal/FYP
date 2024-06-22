@@ -4,6 +4,7 @@ import 'package:fyp/loading%20indicator/loading_indicator2.dart';
 import 'package:fyp/loading%20indicator/loading_indicator3.dart';
 import 'package:fyp/loading%20indicator/loading_indicator4.dart';
 import 'package:fyp/loading%20indicator/loading_indicator5.dart';
+import 'package:fyp/loading%20indicator/loading_indicator6.dart';
 
 class LoadingIndicators extends StatelessWidget {
   const LoadingIndicators({super.key});
@@ -36,6 +37,7 @@ class LoadingIndicators extends StatelessWidget {
               SizedBox(height: 20),
               LoadingIndicator5(),
               SizedBox(height: 20),
+              LoadingIndicator6(),
             ],
           ),
         ),
