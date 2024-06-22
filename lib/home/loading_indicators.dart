@@ -3,6 +3,7 @@ import 'package:fyp/loading%20indicator/loading_indicator1.dart';
 import 'package:fyp/loading%20indicator/loading_indicator2.dart';
 import 'package:fyp/loading%20indicator/loading_indicator3.dart';
 import 'package:fyp/loading%20indicator/loading_indicator4.dart';
+import 'package:fyp/loading%20indicator/loading_indicator5.dart';
 
 class LoadingIndicators extends StatelessWidget {
   const LoadingIndicators({super.key});
@@ -10,7 +11,7 @@ class LoadingIndicators extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFebebeb),
+      backgroundColor: Colors.white,
       appBar: AppBar(),
       body: const Center(
         child: Padding(
@@ -32,6 +33,9 @@ class LoadingIndicators extends StatelessWidget {
                 currentPage: 0,
                 numPages: 5,
               ),
+              SizedBox(height: 20),
+              LoadingIndicator5(),
+              SizedBox(height: 20),
             ],
           ),
         ),
