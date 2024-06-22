@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/loading%20indicator/loading_indicator1.dart';
+import 'package:fyp/loading%20indicator/loading_indicator2.dart';
 
 class LoadingIndicators extends StatelessWidget {
   const LoadingIndicators({super.key});
@@ -18,6 +19,9 @@ class LoadingIndicators extends StatelessWidget {
               defaultDotColor: Color(0xFFFF6969),
               numDots: 10,
             ),
+            SizedBox(height: 20),
+            LoadingIndicator2(),
+            SizedBox(height: 20),
             SizedBox(height: 20),
           ],
         ),
