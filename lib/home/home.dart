@@ -9,6 +9,7 @@ import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
 import 'package:fyp/home/listviews.dart';
+import 'package:fyp/home/loading_indicators.dart';
 import 'package:fyp/home/search_bars.dart';
 import 'package:fyp/home/sliders.dart';
 import 'package:fyp/home/snackbars.dart';
@@ -243,18 +244,18 @@ class Home extends StatelessWidget {
                     },
                   ),
                   const SizedBox(width: 10),
-                  // HomeWidget(
-                  //   width: width * 1.5,
-                  //   title: 'Sliders',
-                  //   onTap: () {
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => const Sliders(),
-                  //       ),
-                  //     );
-                  //   },
-                  // ),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Loading Indicator',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LoadingIndicators(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
               const Divider(thickness: 5, color: Colors.black),
