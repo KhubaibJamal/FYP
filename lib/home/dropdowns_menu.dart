@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:fyp/dropdowns/dropdown1.dart';
 import 'package:fyp/dropdowns/dropdown2.dart';
 import 'package:fyp/dropdowns/dropdown3.dart';
+import 'package:fyp/dropdowns/dropdown4.dart';
 
 class DropdownsMenu extends StatelessWidget {
   const DropdownsMenu({super.key});
@@ -21,6 +22,8 @@ class DropdownsMenu extends StatelessWidget {
               Dropdown2(),
               SizedBox(height: 20),
               Dropdown3(),
+              SizedBox(height: 20),
+              Dropdown4(),
             ],
           ),
         ),
