@@ -25,6 +25,5 @@ class MyApp extends StatelessWidget {
 
 // navigation bar
 // drawer
-// loading indicator
 // expansion tile
 // dropdown
