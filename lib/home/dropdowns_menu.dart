@@ -5,6 +5,7 @@ import 'package:fyp/dropdowns/dropdown2.dart';
 import 'package:fyp/dropdowns/dropdown3.dart';
 import 'package:fyp/dropdowns/dropdown4.dart';
 import 'package:fyp/dropdowns/dropdown5.dart';
+import 'package:fyp/dropdowns/dropdown6.dart';
 
 class DropdownsMenu extends StatelessWidget {
   const DropdownsMenu({super.key});
@@ -27,6 +28,8 @@ class DropdownsMenu extends StatelessWidget {
               Dropdown4(),
               SizedBox(height: 20),
               Dropdown5(),
+              SizedBox(height: 20),
+              Dropdown6(),
             ],
           ),
         ),
