@@ -6,6 +6,7 @@ import 'package:fyp/home/cards.dart';
 import 'package:fyp/home/carousels.dart';
 import 'package:fyp/home/date_pickers.dart';
 import 'package:fyp/home/dialogs.dart';
+import 'package:fyp/home/drawers.dart';
 import 'package:fyp/home/dropdowns_menu.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
@@ -275,18 +276,18 @@ class Home extends StatelessWidget {
                     },
                   ),
                   const SizedBox(width: 10),
-                  // HomeWidget(
-                  //   width: width * 1.5,
-                  //   title: 'Loading Indicator',
-                  //   onTap: () {
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => const LoadingIndicators(),
-                  //       ),
-                  //     );
-                  //   },
-                  // ),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Drawers',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Drawers(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
               const Divider(thickness: 5, color: Colors.black),
