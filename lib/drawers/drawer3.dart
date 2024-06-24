@@ -10,6 +10,9 @@ class Drawer3 extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           const UserAccountsDrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.black87,
+            ),
             accountName: Text("Khubaib Jamal"),
             accountEmail: Text("khubaib@gmail.com"),
             currentAccountPicture: CircleAvatar(

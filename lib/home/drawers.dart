@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/drawers/drawer1.dart';
-import 'package:fyp/drawers/drawer2.dart';
-import 'package:fyp/drawers/drawer3.dart';
 import 'package:fyp/drawers/drawer4.dart';
 
 class Drawers extends StatelessWidget {
