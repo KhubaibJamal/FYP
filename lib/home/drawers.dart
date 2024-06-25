@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/drawers/drawer4.dart';
 import 'package:fyp/drawers/drawer5.dart';
+import 'package:fyp/drawers/drawer6.dart';
 
 class Drawers extends StatelessWidget {
   const Drawers({super.key});
@@ -12,7 +12,8 @@ class Drawers extends StatelessWidget {
       // drawer: const Drawer1(),
       // drawer: const Drawer2(),
       // drawer: const Drawer3(),
-      drawer: const Drawer4(),
+      // drawer: const Drawer4(),
+      drawer: const Drawer6(),
       endDrawer: const Drawer5(),
     );
   }
