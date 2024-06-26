@@ -8,6 +8,7 @@ import 'package:fyp/home/date_pickers.dart';
 import 'package:fyp/home/dialogs.dart';
 import 'package:fyp/home/drawers.dart';
 import 'package:fyp/home/dropdowns_menu.dart';
+import 'package:fyp/home/expansion_tiles.dart';
 import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
 import 'package:fyp/home/listviews.dart';
@@ -302,6 +303,49 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Expansion Tile',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ExpansionTiles(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                  // HomeWidget(
+                  //   width: width,
+                  //   title: 'Drawers',
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const Drawers(),
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
+                  // const SizedBox(width: 10),
+                  // HomeWidget(
+                  //   width: width,
+                  //   title: 'Mixed',
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const Mixed(),
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
                 ],
               ),
               const Divider(thickness: 5, color: Colors.black),
