@@ -12,6 +12,7 @@ import 'package:fyp/home/input_text_fields.dart';
 import 'package:fyp/home/listtiles.dart';
 import 'package:fyp/home/listviews.dart';
 import 'package:fyp/home/loading_indicators.dart';
+import 'package:fyp/home/mixed.dart';
 import 'package:fyp/home/search_bars.dart';
 import 'package:fyp/home/sliders.dart';
 import 'package:fyp/home/snackbars.dart';
@@ -264,7 +265,7 @@ class Home extends StatelessWidget {
               Row(
                 children: [
                   HomeWidget(
-                    width: width * 1.5,
+                    width: width,
                     title: 'Dropdowns',
                     onTap: () {
                       Navigator.push(
@@ -277,13 +278,26 @@ class Home extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                   HomeWidget(
-                    width: width * 1.5,
+                    width: width,
                     title: 'Drawers',
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Drawers(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width,
+                    title: 'Mixed',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Mixed(),
                         ),
                       );
                     },
