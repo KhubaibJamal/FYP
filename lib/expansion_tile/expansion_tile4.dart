@@ -22,8 +22,8 @@ class _ExpansionTile4State extends State<ExpansionTile4> {
           border: Border.all(color: Colors.pink),
         ),
         child: ExpansionTile(
-          key: PageStorageKey<String>('January'),
-          title: Container(
+          key: const PageStorageKey<String>('January'),
+          title: SizedBox(
             width: double.infinity,
             child: Text(
               'January',

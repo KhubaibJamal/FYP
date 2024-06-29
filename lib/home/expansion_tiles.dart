@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fyp/expansion_tile/expansion_tile1.dart';
 import 'package:fyp/expansion_tile/expansion_tile2.dart';
 import 'package:fyp/expansion_tile/expansion_tile3.dart';
 import 'package:fyp/expansion_tile/expansion_tile4.dart';
+import 'package:fyp/expansion_tile/expansion_tile5.dart';
 
 class ExpansionTiles extends StatelessWidget {
   const ExpansionTiles({super.key});
@@ -31,6 +31,8 @@ class ExpansionTiles extends StatelessWidget {
               ExpansionTile3(title: "Title"),
               SizedBox(height: 20),
               ExpansionTile4(),
+              SizedBox(height: 20),
+              ExpansionTile5(),
             ],
           ),
         ),
