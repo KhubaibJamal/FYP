@@ -4,6 +4,7 @@ import 'package:fyp/expansion_tile/expansion_tile2.dart';
 import 'package:fyp/expansion_tile/expansion_tile3.dart';
 import 'package:fyp/expansion_tile/expansion_tile4.dart';
 import 'package:fyp/expansion_tile/expansion_tile5.dart';
+import 'package:fyp/expansion_tile/expansion_tile6.dart';
 
 class ExpansionTiles extends StatelessWidget {
   const ExpansionTiles({super.key});
@@ -33,6 +34,8 @@ class ExpansionTiles extends StatelessWidget {
               ExpansionTile4(),
               SizedBox(height: 20),
               ExpansionTile5(),
+              SizedBox(height: 20),
+              ExpansionTile6(),
             ],
           ),
         ),
