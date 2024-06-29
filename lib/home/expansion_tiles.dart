@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/expansion_tile/expansion_tile1.dart';
 import 'package:fyp/expansion_tile/expansion_tile2.dart';
+import 'package:fyp/expansion_tile/expansion_tile3.dart';
 
 class ExpansionTiles extends StatelessWidget {
   const ExpansionTiles({super.key});
@@ -15,7 +16,7 @@ class ExpansionTiles extends StatelessWidget {
           child: Column(
             children: [
               ExpansionTile1(),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               ExpansionTile2(
                 text: "Science Department ",
                 lists: [
@@ -24,6 +25,8 @@ class ExpansionTiles extends StatelessWidget {
                   "Applied Physics Department",
                 ],
               ),
+              SizedBox(height: 20),
+              ExpansionTile3(title: "Title"),
             ],
           ),
         ),
