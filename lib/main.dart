@@ -24,5 +24,5 @@ class MyApp extends StatelessWidget {
 
 
 // navigation bar
-// expansion tile
+// page view
 // flutter_neumorphic for newomorphic design

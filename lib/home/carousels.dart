@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/carousel/carousel3.dart';
+import 'package:fyp/carousel/carousel4.dart';
 
 class Carousels extends StatelessWidget {
   const Carousels({super.key});
@@ -13,7 +13,8 @@ class Carousels extends StatelessWidget {
         children: [
           // const Expanded(child: Carousel1()),
           // Expanded(child: Carousel2()),
-          Expanded(child: Carousel3()),
+          // Expanded(child: Carousel3()),
+          Expanded(child: Carousel4()),
         ],
       ),
     );
