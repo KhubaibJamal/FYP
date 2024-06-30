@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/navigation%20bar/nav_bar1.dart';
+import 'package:fyp/navigation%20bar/nav_bar2.dart';
 
 class NAvigationBars extends StatelessWidget {
   const NAvigationBars({super.key});
@@ -14,6 +15,12 @@ class NAvigationBars extends StatelessWidget {
           child: Column(
             children: [
               NavBar1(),
+              SizedBox(height: 20),
+              NavBar2(),
+              SizedBox(height: 20),
+              SizedBox(height: 20),
+              SizedBox(height: 20),
+              SizedBox(height: 20),
             ],
           ),
         ),
