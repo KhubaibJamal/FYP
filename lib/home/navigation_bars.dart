@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/navigation%20bar/nav_bar1.dart';
-import 'package:fyp/navigation%20bar/nav_bar10,=.dart';
+import 'package:fyp/navigation%20bar/nav_bar10.dart';
+import 'package:fyp/navigation%20bar/nav_bar11.dart';
 import 'package:fyp/navigation%20bar/nav_bar2.dart';
 import 'package:fyp/navigation%20bar/nav_bar3.dart';
 import 'package:fyp/navigation%20bar/nav_bar4.dart';
@@ -41,6 +42,8 @@ class NAvigationBars extends StatelessWidget {
               NavBar9(),
               SizedBox(height: 20),
               NavBar10(),
+              SizedBox(height: 20),
+              NavBar11(),
             ],
           ),
         ),
