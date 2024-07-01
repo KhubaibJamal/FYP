@@ -4,6 +4,7 @@ import 'package:fyp/navigation%20bar/nav_bar2.dart';
 import 'package:fyp/navigation%20bar/nav_bar3.dart';
 import 'package:fyp/navigation%20bar/nav_bar4.dart';
 import 'package:fyp/navigation%20bar/nav_bar5.dart';
+import 'package:fyp/navigation%20bar/nav_bar6.dart';
 
 class NAvigationBars extends StatelessWidget {
   const NAvigationBars({super.key});
@@ -27,6 +28,7 @@ class NAvigationBars extends StatelessWidget {
               SizedBox(height: 20),
               NavBar5(),
               SizedBox(height: 20),
+              NavBar6(),
             ],
           ),
         ),
