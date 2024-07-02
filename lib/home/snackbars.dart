@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/snack%20bar/snack_bar1.dart';
+import 'package:fyp/snack%20bar/snack_bar2.dart';
+import 'package:fyp/snack%20bar/snack_bar3.dart';
+import 'package:fyp/snack%20bar/snack_bar4.dart';
+import 'package:fyp/snack%20bar/snack_bar5.dart';
+import 'package:fyp/snack%20bar/snack_bar6.dart';
+import 'package:fyp/snack%20bar/snack_bar7.dart';
 
 class SnackBars extends StatelessWidget {
   const SnackBars({super.key});

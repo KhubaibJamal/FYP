@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-snackBar1(context, String text) {
+
+snackBar3(context, String text) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
-      backgroundColor: Colors.red,
+      backgroundColor: const Color(0xff4338CA),
       content: Text(text),
       duration: const Duration(milliseconds: 2500),
     ),
