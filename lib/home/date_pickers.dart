@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fyp/datepickers/datepicker1.dart';
+import 'package:fyp/datepickers/datepicker2.dart';
+import 'package:fyp/datepickers/datepicker3.dart';
+import 'package:fyp/datepickers/datepicker4.dart';
 
 class DatePickers extends StatefulWidget {
   const DatePickers({super.key});
@@ -18,69 +22,17 @@ class _DatePickersState extends State<DatePickers> {
     return Scaffold(
       backgroundColor: const Color(0xFFebebeb),
       appBar: AppBar(),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GestureDetector(
-              onTap: () async {
-                final DateTimeRange? newDate = await showDateRangePicker(
-                  context: context,
-                  firstDate: DateTime(2000),
-                  lastDate: DateTime(2101),
-                  helpText: 'Select a date',
-                );
-              },
-              child: const Text("Date Picker 1"),
-            ),
-            const SizedBox(height: 20),
-            GestureDetector(
-              onTap: () async {
-                final DateTime? newDate = await showDatePicker(
-                  context: context,
-                  initialDate: DateTime.now(),
-                  firstDate: DateTime(1990),
-                  lastDate: DateTime(2030),
-                  helpText: 'Select a date',
-                );
-              },
-              child: const Text("Date Picker 2"),
-            ),
-            const SizedBox(height: 20),
-            GestureDetector(
-              onTap: () async {
-                final TimeOfDay? pickedTime = await showTimePicker(
-                  context: context,
-                  initialTime: _selectedTime ?? TimeOfDay.now(),
-                );
-
-                if (pickedTime != null && pickedTime != _selectedTime) {
-                  _selectedTime = pickedTime;
-                }
-              },
-              child: const Text("Time Picker 3"),
-            ),
-            const SizedBox(height: 20),
-            GestureDetector(
-              onTap: () async {
-                showModalBottomSheet(
-                  context: context,
-                  builder: (BuildContext builder) {
-                    return SizedBox(
-                      height: MediaQuery.of(context).copyWith().size.height / 3,
-                      child: CupertinoDatePicker(
-                        initialDateTime: selectedTime,
-                        mode: CupertinoDatePickerMode.time,
-                        onDateTimeChanged: (DateTime newTime) {
-                        },
-                        use24hFormat: false,
-                      ),
-                    );
-                  },
-                );
-              },
-              child: const Text("Time Picker 4"),
-            ),
+            DatePicker1(),
+            SizedBox(height: 20),
+            DatePicker2(),
+            SizedBox(height: 20),
+            DatePicker3(),
+            SizedBox(height: 20),
+            DatePicker4(),
           ],
         ),
       ),
