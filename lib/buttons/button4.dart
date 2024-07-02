@@ -26,7 +26,7 @@ class OutlineRoundedButton4 extends StatelessWidget {
             const BorderSide(color: Color(0xff2749FD), width: 1.4),
           ),
           padding: MaterialStateProperty.all(
-            const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+            const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
           ),
           shape: MaterialStateProperty.all(
             const RoundedRectangleBorder(
