@@ -14,8 +14,8 @@ class Drawers extends StatelessWidget {
       // drawer: const Drawer3(),
       // drawer: const Drawer4(),
       // drawer: const Drawer6(),
-      drawer: const Drawer7(),
-      endDrawer: const Drawer5(),
+      drawer: const Drawer5(),
+      endDrawer: const Drawer7(),
     );
   }
 }
