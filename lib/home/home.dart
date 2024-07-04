@@ -21,6 +21,7 @@ import 'package:fyp/home/snackbars.dart';
 import 'package:fyp/home/social_bottons.dart';
 import 'package:fyp/templates/auth_template/welcome_screen.dart';
 import 'package:fyp/templates/calculator/calculator.dart';
+import 'package:fyp/templates/covid-19_template/dashboard_screen.dart';
 import 'package:fyp/templates/healthy_food_template/bottom_nav_bar.dart';
 
 class Home extends StatelessWidget {
@@ -395,19 +396,19 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
-                  // const SizedBox(width: 10),
-                  // HomeWidget(
-                  //   width: width * 1.5,
-                  //   title: 'Healthy Food UI',
-                  //   onTap: () {
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => const BottomNavigationAppBar(),
-                  //       ),
-                  //     );
-                  //   },
-                  // ),
+                  const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'covid 19',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const DashboardScreen(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
             ],

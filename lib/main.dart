@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
 }
 
 
-// navigation bar
-// page view
+// shop app
+//  quiz app    https://github.com/abuanwar072/Quiz-App-Flutter/tree/master
+// chat app ui    https://github.com/abuanwar072/Chat-Messaging-App-Light-and-Dark-Theme
+// travel app   https://github.com/abuanwar072/Travel-App-UI-using-Flutter
 // flutter_neumorphic for newomorphic design
