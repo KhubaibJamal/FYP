@@ -15,6 +15,7 @@ import 'package:fyp/home/listviews.dart';
 import 'package:fyp/home/loading_indicators.dart';
 import 'package:fyp/home/mixed.dart';
 import 'package:fyp/home/navigation_bars.dart';
+import 'package:fyp/home/neumorphics.dart';
 import 'package:fyp/home/search_bars.dart';
 import 'package:fyp/home/sliders.dart';
 import 'package:fyp/home/snackbars.dart';
@@ -337,7 +338,11 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
-                  const SizedBox(width: 10),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
                   HomeWidget(
                     width: width,
                     title: 'Neumorphic',
@@ -345,7 +350,7 @@ class Home extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Mixed(),
+                          builder: (context) => const Neumorphics(),
                         ),
                       );
                     },
