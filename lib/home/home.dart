@@ -23,6 +23,7 @@ import 'package:fyp/templates/auth_template/welcome_screen.dart';
 import 'package:fyp/templates/calculator/calculator.dart';
 import 'package:fyp/templates/covid-19_template/dashboard_screen.dart';
 import 'package:fyp/templates/healthy_food_template/bottom_nav_bar.dart';
+import 'package:fyp/templates/quiz_template/screens/welcome/welcome.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -409,6 +410,36 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  HomeWidget(
+                    width: width * 1.5,
+                    title: 'Quiz App',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Welcome(),
+                        ),
+                      );
+                    },
+                  ),
+                  // const SizedBox(width: 10),
+                  // HomeWidget(
+                  //   width: width * 1.5,
+                  //   title: 'covid 19',
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const DashboardScreen(),
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
                 ],
               ),
             ],
