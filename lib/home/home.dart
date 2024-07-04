@@ -337,19 +337,19 @@ class Home extends StatelessWidget {
                       );
                     },
                   ),
-                  // const SizedBox(width: 10),
-                  // HomeWidget(
-                  //   width: width,
-                  //   title: 'Mixed',
-                  //   onTap: () {
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => const Mixed(),
-                  //       ),
-                  //     );
-                  //   },
-                  // ),
+                  const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width,
+                    title: 'Neumorphic',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Mixed(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
               const Divider(thickness: 5, color: Colors.black),

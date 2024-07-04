@@ -24,8 +24,19 @@ class MyApp extends StatelessWidget {
 }
 
 
-// shop app
-//  quiz app    https://github.com/abuanwar072/Quiz-App-Flutter/tree/master
+
 // chat app ui    https://github.com/abuanwar072/Chat-Messaging-App-Light-and-Dark-Theme
 // travel app   https://github.com/abuanwar072/Travel-App-UI-using-Flutter
 // flutter_neumorphic for newomorphic design
+
+
+/*
+TEMPLATE:
+1- healthy food ui (complete)
+2- covid-19 ui (complete)
+3- quiz app (complete)
+4- chat app 
+5- travel app
+6- shop app ui (complete)
+
+*/
