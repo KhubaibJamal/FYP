@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/neumorphic/neumorphic1.dart';
 import 'package:fyp/neumorphic/neumorphic2.dart';
 import 'package:fyp/neumorphic/neumorphic3.dart';
+import 'package:fyp/neumorphic/neumorphic4.dart';
 
 class Neumorphics extends StatelessWidget {
   Neumorphics({super.key});
@@ -29,6 +30,11 @@ class Neumorphics extends StatelessWidget {
               Neumorphic3(
                 controller: controller,
                 hintText: "search here",
+              ),
+              const SizedBox(height: 10),
+              Neumorphic4(
+                controller: controller,
+                hintText: "search..",
               ),
             ],
           ),
