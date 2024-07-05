@@ -3,6 +3,7 @@ import 'package:fyp/neumorphic/neumorphic1.dart';
 import 'package:fyp/neumorphic/neumorphic10.dart';
 import 'package:fyp/neumorphic/neumorphic11.dart';
 import 'package:fyp/neumorphic/neumorphic13.dart';
+import 'package:fyp/neumorphic/neumorphic14.dart';
 import 'package:fyp/neumorphic/neumorphic2.dart';
 import 'package:fyp/neumorphic/neumorphic3.dart';
 import 'package:fyp/neumorphic/neumorphic4.dart';
@@ -88,6 +89,8 @@ class Neumorphics extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Neumorphic12(),
+                const SizedBox(height: 10),
+                Neumorphic14(),
                 const SizedBox(height: 10),
               ],
             ),
