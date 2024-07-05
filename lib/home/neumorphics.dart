@@ -11,7 +11,7 @@ import 'package:fyp/neumorphic/neumorphic6.dart';
 import 'package:fyp/neumorphic/neumorphic7.dart';
 import 'package:fyp/neumorphic/neumorphic8.dart';
 import 'package:fyp/neumorphic/neumorphic9.dart';
-import 'package:fyp/neumorphic/newmorphic12.dart';
+import 'package:fyp/neumorphic/neumorphic12.dart';
 
 class Neumorphics extends StatelessWidget {
   Neumorphics({super.key});
