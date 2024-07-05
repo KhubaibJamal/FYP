@@ -7,6 +7,7 @@ import 'package:fyp/neumorphic/neumorphic5.dart';
 import 'package:fyp/neumorphic/neumorphic6.dart';
 import 'package:fyp/neumorphic/neumorphic7.dart';
 import 'package:fyp/neumorphic/neumorphic8.dart';
+import 'package:fyp/neumorphic/neumorphic9.dart';
 
 class Neumorphics extends StatelessWidget {
   Neumorphics({super.key});
@@ -59,6 +60,8 @@ class Neumorphics extends StatelessWidget {
                   title: "List Tile",
                   description: 'This is tile\'s description',
                 ),
+                const SizedBox(height: 10),
+                Neumorphic9(onPressed: () {}),
                 const SizedBox(height: 10),
               ],
             ),
