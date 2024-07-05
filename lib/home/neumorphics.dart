@@ -5,6 +5,7 @@ import 'package:fyp/neumorphic/neumorphic3.dart';
 import 'package:fyp/neumorphic/neumorphic4.dart';
 import 'package:fyp/neumorphic/neumorphic5.dart';
 import 'package:fyp/neumorphic/neumorphic6.dart';
+import 'package:fyp/neumorphic/neumorphic7.dart';
 
 class Neumorphics extends StatelessWidget {
   Neumorphics({super.key});
@@ -29,7 +30,7 @@ class Neumorphics extends StatelessWidget {
                   btnText: "Hello",
                 ),
                 const SizedBox(height: 10),
-                Neumorphic2(),
+                const Neumorphic2(),
                 const SizedBox(height: 10),
                 Neumorphic3(
                   controller: controller,
@@ -50,6 +51,8 @@ class Neumorphics extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Neumorphic6(),
+                const SizedBox(height: 10),
+                const Neumorphic7(),
                 const SizedBox(height: 10),
               ],
             ),
