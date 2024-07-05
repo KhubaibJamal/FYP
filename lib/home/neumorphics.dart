@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/neumorphic/neumorphic1.dart';
 import 'package:fyp/neumorphic/neumorphic10.dart';
+import 'package:fyp/neumorphic/neumorphic11.dart';
 import 'package:fyp/neumorphic/neumorphic2.dart';
 import 'package:fyp/neumorphic/neumorphic3.dart';
 import 'package:fyp/neumorphic/neumorphic4.dart';
@@ -69,6 +70,18 @@ class Neumorphics extends StatelessWidget {
                   max: 100.0,
                   initialValue: 45.0,
                   onChange: (value) {},
+                ),
+                const SizedBox(height: 10),
+                GestureDetector(
+                  onTap: () async {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return const Neumorphic11();
+                        });
+                    return;
+                  },
+                  child: const Text("Bottom Sheet"),
                 ),
                 const SizedBox(height: 10),
               ],
