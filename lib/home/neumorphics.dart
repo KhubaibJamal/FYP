@@ -3,6 +3,7 @@ import 'package:fyp/neumorphic/neumorphic1.dart';
 import 'package:fyp/neumorphic/neumorphic2.dart';
 import 'package:fyp/neumorphic/neumorphic3.dart';
 import 'package:fyp/neumorphic/neumorphic4.dart';
+import 'package:fyp/neumorphic/neumorphic5.dart';
 
 class Neumorphics extends StatelessWidget {
   Neumorphics({super.key});
@@ -36,6 +37,15 @@ class Neumorphics extends StatelessWidget {
                 controller: controller,
                 hintText: "search..",
               ),
+              const SizedBox(height: 10),
+              Neumorphic5(
+                text: "Explore",
+                imageUrl:
+                    'https://media.designrush.com/articles/101246/conversions/app-development-process-details.jpg',
+                subtitle: '30+ clients',
+                onPressed: () {},
+              ),
+              const SizedBox(height: 10),
             ],
           ),
         ),
