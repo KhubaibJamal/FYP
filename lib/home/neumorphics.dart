@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/neumorphic/neumorphic1.dart';
+import 'package:fyp/neumorphic/neumorphic10.dart';
 import 'package:fyp/neumorphic/neumorphic2.dart';
 import 'package:fyp/neumorphic/neumorphic3.dart';
 import 'package:fyp/neumorphic/neumorphic4.dart';
@@ -62,6 +63,13 @@ class Neumorphics extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Neumorphic9(onPressed: () {}),
+                const SizedBox(height: 10),
+                Neumorphic10(
+                  min: 0.0,
+                  max: 100.0,
+                  initialValue: 45.0,
+                  onChange: (value) {},
+                ),
                 const SizedBox(height: 10),
               ],
             ),
