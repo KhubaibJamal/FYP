@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp/neumorphic/neumorphic1.dart';
 import 'package:fyp/neumorphic/neumorphic10.dart';
 import 'package:fyp/neumorphic/neumorphic11.dart';
+import 'package:fyp/neumorphic/neumorphic13.dart';
 import 'package:fyp/neumorphic/neumorphic2.dart';
 import 'package:fyp/neumorphic/neumorphic3.dart';
 import 'package:fyp/neumorphic/neumorphic4.dart';
@@ -19,6 +20,7 @@ class Neumorphics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Neumorphic13(),
       appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
