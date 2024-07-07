@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp/home/home.dart';
 import 'package:fyp/mixed/m1_chat_screen.dart';
+import 'package:fyp/mixed/m1_gridview_screen.dart';
 
 class Mixed extends StatelessWidget {
   const Mixed({super.key});
@@ -22,6 +23,19 @@ class Mixed extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const ChatScreen(),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 10),
+              HomeWidget(
+                width: 500,
+                title: "GridViewScreen",
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const GridViewScreen(),
                     ),
                   );
                 },
