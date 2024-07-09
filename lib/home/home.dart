@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/home/animations.dart';
 import 'package:fyp/home/appbars.dart';
 import 'package:fyp/home/bottom_sheets.dart';
 import 'package:fyp/home/buttons.dart';
@@ -351,6 +352,19 @@ class Home extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) => Neumorphics(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 10),
+                  HomeWidget(
+                    width: width,
+                    title: 'Animations',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Animations(),
                         ),
                       );
                     },

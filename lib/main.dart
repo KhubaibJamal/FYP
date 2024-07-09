@@ -43,14 +43,14 @@ WIDGET:
 13- sliders 6
 14- bottom sheet 11
 15- loading indicator 8
-16- dropdowns 6
+16- dropdowns 7
 17- drawer 7
 18- mixed 2
 19- Expansion tile 8
 20- nav bar 12
 21- neumorphic 14
 
-TOTAL: 195
+TOTAL: 196
 
 TEMPLATE:
 1- healthy food ui (complete)
