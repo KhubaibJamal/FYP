@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:fyp/animations/animation1.dart';
 import 'package:fyp/animations/animation2.dart';
 import 'package:fyp/animations/animation3.dart';
+import 'package:fyp/animations/animation4.dart';
 
 class Animations extends StatelessWidget {
   const Animations({super.key});
@@ -22,6 +23,8 @@ class Animations extends StatelessWidget {
               Animation2(),
               SizedBox(height: 20),
               SizedBox(height: 500, child: Animation3()),
+              SizedBox(height: 20),
+              Animation4(),
               SizedBox(height: 20),
             ],
           ),
