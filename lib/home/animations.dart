@@ -24,7 +24,7 @@ class Animations extends StatelessWidget {
               SizedBox(height: 20),
               SizedBox(height: 500, child: Animation3()),
               SizedBox(height: 20),
-              Animation4(),
+              SizedBox(height: 500, child: Animation4()),
               SizedBox(height: 20),
             ],
           ),
