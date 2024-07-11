@@ -49,8 +49,9 @@ WIDGET:
 19- Expansion tile 8
 20- nav bar 12
 21- neumorphic 14
+22- animations 5
 
-TOTAL: 196
+TOTAL: 201
 
 TEMPLATE:
 1- healthy food ui (complete)
