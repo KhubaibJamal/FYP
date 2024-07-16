@@ -26,8 +26,8 @@ class ExpansionTile8 extends StatelessWidget {
           color: Colors.white,
         ),
       ),
-      children: [
-        const Padding(
+      children: const [
+        Padding(
           padding: EdgeInsets.all(16.0),
           child: Text(
             'Flutter is an open-source UI software development kit created by Google. '
